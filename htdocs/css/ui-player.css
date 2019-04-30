@@ -1,0 +1,229 @@
+/* CSS Document */
+.player{
+	position: absolute;
+	top:0px;
+	width: 900px;
+	height: 82px;
+	min-width: 900px;
+	left: 50%;
+	margin-left: -450px;
+	/*background-color: aquamarine;*/
+}
+.mp3-player-img{
+	position: absolute;
+	top: 1px;
+	width: 78px;
+	height: 79px;
+	left: 1px;
+}
+.player-img-style{
+	position: absolute;
+	top: 0px;
+	width: 78px;
+    height: 78px;
+    border-radius: 39px;
+}
+.mp3-player-control{
+	position: absolute;
+	top: 0px;
+	width: 810px;
+	height: 80px;
+	right: 2px;
+}
+.player-title{
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 250px;
+	height: 50px;
+}
+.player-name-text{
+	display: block;
+	position: absolute;
+	top:3px;
+	line-height: 22px;
+	text-align:left;
+	width:250px;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
+.player-singer-text{
+	display: block;
+	position: absolute;
+	top:25px;
+	line-height: 22px;
+	text-align:left;
+	width:250px;
+	font-size: 12px;
+	color: #888888;
+}
+.player-control-play{
+	position:absolute;
+	top: 5px;
+	left: 255px;
+	height: 48px;
+	width: 180px;
+}
+.player-pre:hover,.player-next:hover{
+	filter:contrast(150%);
+	cursor: pointer;
+}
+.pre-circle{
+	position:absolute;
+	left:0px;
+	top:6px;
+	width: 28px;
+	height: 28px;
+	border: solid 2px #999999;
+	border-radius: 17px;
+}
+.play-circle{
+	position:absolute;
+	left:50%;
+	top:3px;
+	width: 35px;
+	height: 35px;
+	border: solid 3px #999999;
+	border-radius: 21px;
+	margin-left: -21px;
+}
+.next-circle{
+	position:absolute;
+	right: 0px;
+	top: 6px;
+	width: 28px;
+	height: 28px;
+	border: solid 2px #999999;
+	border-radius: 17px;
+}
+
+.pre-ico{
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: -11px;
+	margin-top: -11px;
+}
+.play-ico{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left: -12px;
+	margin-top: -15px;
+}
+.next-ico{
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: -10px;
+	margin-top: -11px;
+}
+.ico-action:hover{
+	filter: invert(28%) sepia(88%) saturate(7498%) hue-rotate(313deg) brightness(102%) contrast(109%);
+	cursor: pointer;
+}
+.ico-action:active{
+	filter: invert(42%) sepia(90%) saturate(1080%) hue-rotate(180deg) brightness(106%) contrast(101%);
+}
+.player-controller{
+	position:absolute;
+	bottom: 1px;
+	left: 5px;
+	height: 25px;
+	width: 680px;	
+}
+.used-time{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: 40px;
+	height: 25px;
+	font-size: 14px;
+	color: #AAAAAA;
+}
+.controller-all{
+	position:absolute;
+	top: 5px;
+	left:43px;
+	height: 9px;
+	background-color: black;
+	border-bottom: solid 1px #666666;
+	border-radius: 4px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.controller-all:hover{
+	cursor:pointer;
+}
+.run{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1%;
+	height: 100%;
+	border-radius: 4px;
+	background-color: red;
+}
+.controller-cur{
+	position:absolute;
+	top: -3px;
+	right: -11px;
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	border: solid 5px white;
+	border-radius: 10px;
+}
+.all-time{
+	position:absolute;
+	top: 0px;
+	right: 0px;
+	width: 40px;
+	height: 25px;
+	font-size: 14px;
+	color: #AAAAAA;
+}
+.player-volue{
+	position:absolute;
+	bottom: 1px;
+	right: 1px;
+	height: 25px;
+	width: 120px;
+}
+.volue-img{
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.volue-controller{
+	position: absolute;
+	top:6px;
+	left:32px;
+	height: 6px;
+	border-radius: 4px;
+	background-color: black;
+	border-bottom: solid 1px #666666;
+}
+.volue-controller:hover{
+	cursor:pointer;
+}
+.volue-run{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1%;
+	height: 100%;
+	border-radius: 4px;
+	background-color: red;
+}
+.volue-controller-cur{
+	position: absolute;
+	top: -3px;
+	right: -6px;
+	width: 4px;
+	height: 4px;
+	background-color: red;
+	border: solid 4px white;
+	border-radius: 6px;
+}
