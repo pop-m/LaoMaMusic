@@ -336,6 +336,12 @@ function change_music(num)
 	var ajax_timeout = setInterval(function(){
 		if(music_info.status === 1){
 			//ajax获取到了数据
+			//如果获取的音乐是付费的，那就之进行alert即可
+			if(music_info.value.error != ""){
+				alert(music_info.value.error);
+				clearInterval(ajax_timeout);
+				return;
+			}
 			//添加至播放器的播放列表
 			add_to_list(music_info.value.song_name,music_info.value.play_url,music_info.value.author_name,music_info.value.img,music_info.value.timelength);
 			//重绘完成

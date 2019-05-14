@@ -47,7 +47,7 @@ int search_music(const char* query_string)
 		log.write_log("getMusicInfo:服务器创建socket失败");
 		return -1;
 	}
-	char hostname[] = "wwwapi.kugou.com";
+	char hostname[] = "m.kugou.com";
 	int conn_ret = connect_to(sock, hostname);
 	if(conn_ret == -1){
 		log.write_log("getMusicInfo:API域名解析失败");
@@ -59,7 +59,7 @@ int search_music(const char* query_string)
 
 	char url[512];
 	memset(url, 0x00, 512);
-	sprintf(url, "/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=%s", fileHash);
+	sprintf(url, "/app/i/getSongInfo.php?cmd=playInfo&hash=%s", fileHash);
 
 	log.write_log(url);
 
@@ -73,10 +73,7 @@ int search_music(const char* query_string)
 	}
 	close(sock);
 	log.write_log("getMusicInfo:API请求完成");
-
-	body.pop_back();
-	body.pop_back();
-	const char* start = strchr(body.c_str(), '(') + 1;
+	const char* start = body.c_str();
 
 	//json解析
 	Json::Reader reader;
@@ -84,20 +81,33 @@ int search_music(const char* query_string)
 	if(reader.parse(start, root)){
 		if(root["status"].asInt() == 1){
 			Json::Value ele;
-			ele["author_name"] = root["data"]["author_name"].asCString();
-			ele["song_name"] = root["data"]["song_name"].asCString();
-			ele["timelength"] = root["data"]["timelength"].asInt();
-			ele["play_url"] = root["data"]["play_url"].asCString();
-			ele["img"] = root["data"]["img"].asCString();
+			ele["author_name"] = root["singerName"].asCString();
+			ele["song_name"] = root["songName"].asCString();
+			ele["timelength"] = root["time"].asInt();
+			ele["play_url"] = root["url"].asCString();
+			std::string img_url = root["imgUrl"].asString();
+			size_t pos = img_url.find("{size}");
+			if(pos != std::string::npos){
+				ele["img"] = img_url.replace(pos, 6, "200");
+			}else{
+				ele["img"] = "/img/default-music-img.png";
+			}
+			ele["error"] = "";
 			std::cout<<"Content-Type: application/json\r\n";
 			std::cout<<"\r\n";
 			std::cout<<ele.toStyledString()<<"\r\n";
 			return 0;
 
 		}else{
-			return -1;
+			Json::Value ele;
+			ele["error"] = root["error"].asString();
+			std::cout<<"Content-Type: application/json\r\n";
+			std::cout<<"\r\n";
+			std::cout << ele.toStyledString() << std::endl;
+			return 0;
 		}
 	}else{
+		log.write_log("getmusicinfo:返回json解析错误！");
 		return -1;
 	}
 }

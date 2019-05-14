@@ -59,7 +59,7 @@ int search_music(const char* query_string)
 
 	char url[512];
 	memset(url, 0x00, 512);
-	sprintf(url, "/song_search_v2?callback=jQuery191034642999175022426_1489023388639&keyword=%s&page=1&pagesize=100&userid=-1&clientver=&platform=WebFilter&filter=2&iscorrection=1&privilege_filter=0", keywords);
+	sprintf(url, "/song_search_v2?keyword=%s&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter", keywords);
 
 	log.write_log(url);
 
@@ -74,9 +74,7 @@ int search_music(const char* query_string)
 	close(sock);
 	log.write_log("API请求完成");
 
-	body.pop_back();
-	body.pop_back();
-	const char* start = strchr(body.c_str(), '(') + 1;
+	const char* start = body.c_str();
 
 	//json解析
 	Json::Reader reader;
@@ -101,9 +99,15 @@ int search_music(const char* query_string)
 			return 0;
 
 		}else{
+			char err[128] = {0};
+			sprintf(err,"[warning] [key word:%s]search no result!", keywords);
+			log.write_log(err);
 			return -1;
 		}
 	}else{
+		char err[128] = {0};
+		sprintf(err,"[error] [key word:%s]search error!", keywords);
+		log.write_log(err);
 		return -1;
 	}
 	return 0;

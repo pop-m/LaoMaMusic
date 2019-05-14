@@ -1,37 +1,187 @@
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=A11F7A8BD2EA5BBDB32F58A9081F27B4
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成
-/song_search_v2?callback=jQuery191034642999175022426_1489023388639&keyword=%E7%8B%82%E7%8B%BC&page=1&pagesize=100&userid=-1&clientver=&platform=WebFilter&filter=2&iscorrection=1&privilege_filter=0
+{"fileHead":100,"q":0,"extra":{"320filesize":10785645,"sqfilesize":30386262,"sqhash":"7B7A306B0000C77B85C300E80BCF3A2C","128hash":"9198B18815EE8CE42AE368AE29276F78","320hash":"FEB873F431A9D6588183B76FED9EAB3F","128filesize":4314636},"fileSize":4314636,"choricSinger":"陈雪凝","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20190216\/20190216172238787963.jpg","topic_remark":"","url":"http:\/\/fs.open.kugou.com\/99858a825c9dc168baa432701fa8de47\/5cda1fb7\/G119\/M01\/05\/0D\/F4cBAFxlweSAT9BlAEHWDL3dgeI800.mp3","time":1557799067,"trans_param":{"cid":61841854,"pay_block_tpl":1,"musicpack_advance":0,"display_rate":0,"display":0},"albumid":15270740,"singerName":"陈雪凝","topic_url":"","extName":"mp3","songName":"绿色","singerHead":"","hash":"9198B18815EE8CE42AE368AE29276F78","mvhash":"","store_type":"audio","error":"","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20190412\/20190412094604293.jpg","album_audio_id":130480126,"area_code":"1","ctype":1009,"128privilege":8,"bitRate":128,"status":1,"stype":11323,"req_hash":"9198B18815EE8CE42AE368AE29276F78","320privilege":10,"intro":"","singerId":582744,"privilege":8,"fileName":"陈雪凝 - 绿色","errcode":0,"sqprivilege":10,"backup_url":["http:\/\/fs.open2.kugou.com\/201905140953\/46ef6d83ac115f6496d729427a5b028c\/G119\/M01\/05\/0D\/F4cBAFxlweSAT9BlAEHWDL3dgeI800.mp3"],"timeLength":270}
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
 API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=2F24805B0E04CF735CADE105A7CF5568
+/app/i/getSongInfo.php?cmd=playInfo&hash=A50E563C152A4584321501E5BA824304
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=A50E563C152A4584321501E5BA824304 HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=E756B3857500BE494070322CA0617EEC
+{"fileHead":100,"q":0,"extra":{"320filesize":8509693,"sqfilesize":26839197,"sqhash":"35CBEB7E0BBEC7FE161FCAA53BEDF6AB","128hash":"A50E563C152A4584321501E5BA824304","320hash":"5049589B93E576996EE82F36795A541A","128filesize":3402117},"fileSize":3402117,"choricSinger":"周杰伦","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20171005\/20171005201444814336.jpg","topic_remark":"","url":"http:\/\/fs.open.kugou.com\/4991094fcced774bab1e37778f144cb8\/5cda20cd\/G114\/M01\/1F\/10\/sg0DAFnWF0mAWSkzADPphbA0r2s996.mp3","time":1557799117,"trans_param":{"cid":22808753,"pay_block_tpl":1,"musicpack_advance":0,"display_rate":0,"display":0},"albumid":4085497,"singerName":"周杰伦","topic_url":"","extName":"mp3","songName":"告白气球","singerHead":"","hash":"A50E563C152A4584321501E5BA824304","intro":"","store_type":"audio","error":"","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20180515\/20180515002522714.jpg","album_audio_id":89033491,"area_code":"1","bitRate":127,"128privilege":8,"req_hash":"A50E563C152A4584321501E5BA824304","status":1,"stype":11323,"mvhash":"","320privilege":10,"privilege":8,"singerId":3520,"ctype":1009,"fileName":"周杰伦 - 告白气球 (Live)","errcode":0,"sqprivilege":10,"backup_url":["http:\/\/fs.open2.kugou.com\/201905140958\/28869ff1626377314a2aeccfd4935682\/G114\/M01\/1F\/10\/sg0DAFnWF0mAWSkzADPphbA0r2s996.mp3"],"timeLength":213}
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成
-/song_search_v2?callback=jQuery191034642999175022426_1489023388639&keyword=%E6%9E%97%E4%BF%8A%E6%9D%B0&page=1&pagesize=100&userid=-1&clientver=&platform=WebFilter&filter=2&iscorrection=1&privilege_filter=0
+{"fileHead":100,"q":0,"extra":{"320filesize":10785645,"sqfilesize":30386262,"sqhash":"7B7A306B0000C77B85C300E80BCF3A2C","128hash":"9198B18815EE8CE42AE368AE29276F78","320hash":"FEB873F431A9D6588183B76FED9EAB3F","128filesize":4314636},"fileSize":4314636,"choricSinger":"陈雪凝","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20190216\/20190216172238787963.jpg","topic_remark":"","url":"http:\/\/fs.open.kugou.com\/c939db525095f308f67c57a4f428ed85\/5cda2449\/G119\/M01\/05\/0D\/F4cBAFxlweSAT9BlAEHWDL3dgeI800.mp3","time":1557800426,"trans_param":{"cid":61841854,"pay_block_tpl":1,"musicpack_advance":0,"display_rate":0,"display":0},"albumid":15270740,"singerName":"陈雪凝","topic_url":"","extName":"mp3","songName":"绿色","singerHead":"","hash":"9198B18815EE8CE42AE368AE29276F78","mvhash":"","store_type":"audio","error":"","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20190412\/20190412094604293.jpg","album_audio_id":130480126,"area_code":"1","ctype":1009,"128privilege":8,"bitRate":128,"status":1,"stype":11323,"req_hash":"9198B18815EE8CE42AE368AE29276F78","320privilege":10,"intro":"","singerId":582744,"privilege":8,"fileName":"陈雪凝 - 绿色","errcode":0,"sqprivilege":10,"backup_url":["http:\/\/fs.open2.kugou.com\/201905141013\/ef48da71dc0149edfb97f74e266e149b\/G119\/M01\/05\/0D\/F4cBAFxlweSAT9BlAEHWDL3dgeI800.mp3"],"timeLength":270}
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+{"fileHead":100,"q":0,"extra":{"320filesize":12881501,"sqfilesize":34352677,"sqhash":"0245706E8BDA720DC903F2565685BEFC","128hash":"458E9B9F362277AC37E9EEF1CB80B535","320hash":"DE467D3F99FDEC803A7CF9E33F9EC82C","128filesize":5152644},"fileSize":5152644,"choricSinger":"王琪","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20190409\/20190409185926917041.jpg","topic_remark":"","url":"http:\/\/fs.open.kugou.com\/d92b639c9e359c0001b8a6eb68dfe003\/5cda2371\/G157\/M05\/02\/15\/PYcBAFyse1GALQhFAE6fhBNwADE409.mp3","time":1557800504,"trans_param":{"cid":67373062,"pay_block_tpl":1,"musicpack_advance":0,"display_rate":0,"display":0},"albumid":18712576,"singerName":"王琪","topic_url":"","extName":"mp3","songName":"万爱千恩","singerHead":"","hash":"458E9B9F362277AC37E9EEF1CB80B535","mvhash":"","store_type":"audio","error":"","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20190306\/20190306180911103.jpg","album_audio_id":143558061,"area_code":"1","ctype":1009,"128privilege":8,"bitRate":128,"status":1,"stype":11323,"req_hash":"458E9B9F362277AC37E9EEF1CB80B535","320privilege":10,"intro":"","singerId":86969,"privilege":8,"fileName":"王琪 - 万爱千恩","errcode":0,"sqprivilege":10,"backup_url":["http:\/\/fs.open2.kugou.com\/201905141009\/0ffcaf2ce91392b37884ff8fb0b11441\/G157\/M05\/02\/15\/PYcBAFyse1GALQhFAE6fhBNwADE409.mp3"],"timeLength":322}
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+{"fileHead":100,"q":0,"extra":{"320filesize":10785645,"sqfilesize":30386262,"sqhash":"7B7A306B0000C77B85C300E80BCF3A2C","128hash":"9198B18815EE8CE42AE368AE29276F78","320hash":"FEB873F431A9D6588183B76FED9EAB3F","128filesize":4314636},"fileSize":4314636,"choricSinger":"陈雪凝","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20190216\/20190216172238787963.jpg","topic_remark":"","url":"http:\/\/fs.open.kugou.com\/c939db525095f308f67c57a4f428ed85\/5cda2449\/G119\/M01\/05\/0D\/F4cBAFxlweSAT9BlAEHWDL3dgeI800.mp3","time":1557800511,"trans_param":{"cid":61841854,"pay_block_tpl":1,"musicpack_advance":0,"display_rate":0,"display":0},"albumid":15270740,"singerName":"陈雪凝","topic_url":"","extName":"mp3","songName":"绿色","singerHead":"","hash":"9198B18815EE8CE42AE368AE29276F78","mvhash":"","store_type":"audio","error":"","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20190412\/20190412094604293.jpg","album_audio_id":130480126,"area_code":"1","ctype":1009,"128privilege":8,"bitRate":128,"status":1,"stype":11323,"req_hash":"9198B18815EE8CE42AE368AE29276F78","320privilege":10,"intro":"","singerId":582744,"privilege":8,"fileName":"陈雪凝 - 绿色","errcode":0,"sqprivilege":10,"backup_url":["http:\/\/fs.open2.kugou.com\/201905141013\/ef48da71dc0149edfb97f74e266e149b\/G119\/M01\/05\/0D\/F4cBAFxlweSAT9BlAEHWDL3dgeI800.mp3"],"timeLength":270}
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+{"fileHead":100,"q":0,"extra":{"320filesize":10785645,"sqfilesize":30386262,"sqhash":"7B7A306B0000C77B85C300E80BCF3A2C","128hash":"9198B18815EE8CE42AE368AE29276F78","320hash":"FEB873F431A9D6588183B76FED9EAB3F","128filesize":4314636},"fileSize":4314636,"choricSinger":"陈雪凝","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20190216\/20190216172238787963.jpg","topic_remark":"","url":"http:\/\/fs.open.kugou.com\/c939db525095f308f67c57a4f428ed85\/5cda2449\/G119\/M01\/05\/0D\/F4cBAFxlweSAT9BlAEHWDL3dgeI800.mp3","time":1557800514,"trans_param":{"cid":61841854,"pay_block_tpl":1,"musicpack_advance":0,"display_rate":0,"display":0},"albumid":15270740,"singerName":"陈雪凝","topic_url":"","extName":"mp3","songName":"绿色","singerHead":"","hash":"9198B18815EE8CE42AE368AE29276F78","mvhash":"","store_type":"audio","error":"","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20190412\/20190412094604293.jpg","album_audio_id":130480126,"area_code":"1","ctype":1009,"128privilege":8,"bitRate":128,"status":1,"stype":11323,"req_hash":"9198B18815EE8CE42AE368AE29276F78","320privilege":10,"intro":"","singerId":582744,"privilege":8,"fileName":"陈雪凝 - 绿色","errcode":0,"sqprivilege":10,"backup_url":["http:\/\/fs.open2.kugou.com\/201905141013\/ef48da71dc0149edfb97f74e266e149b\/G119\/M01\/05\/0D\/F4cBAFxlweSAT9BlAEHWDL3dgeI800.mp3"],"timeLength":270}
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+{"fileHead":100,"q":0,"extra":{"320filesize":12881501,"sqfilesize":34352677,"sqhash":"0245706E8BDA720DC903F2565685BEFC","128hash":"458E9B9F362277AC37E9EEF1CB80B535","320hash":"DE467D3F99FDEC803A7CF9E33F9EC82C","128filesize":5152644},"fileSize":5152644,"choricSinger":"王琪","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20190409\/20190409185926917041.jpg","topic_remark":"","url":"http:\/\/fs.open.kugou.com\/d92b639c9e359c0001b8a6eb68dfe003\/5cda2371\/G157\/M05\/02\/15\/PYcBAFyse1GALQhFAE6fhBNwADE409.mp3","time":1557800526,"trans_param":{"cid":67373062,"pay_block_tpl":1,"musicpack_advance":0,"display_rate":0,"display":0},"albumid":18712576,"singerName":"王琪","topic_url":"","extName":"mp3","songName":"万爱千恩","singerHead":"","hash":"458E9B9F362277AC37E9EEF1CB80B535","mvhash":"","store_type":"audio","error":"","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20190306\/20190306180911103.jpg","album_audio_id":143558061,"area_code":"1","ctype":1009,"128privilege":8,"bitRate":128,"status":1,"stype":11323,"req_hash":"458E9B9F362277AC37E9EEF1CB80B535","320privilege":10,"intro":"","singerId":86969,"privilege":8,"fileName":"王琪 - 万爱千恩","errcode":0,"sqprivilege":10,"backup_url":["http:\/\/fs.open2.kugou.com\/201905141009\/0ffcaf2ce91392b37884ff8fb0b11441\/G157\/M05\/02\/15\/PYcBAFyse1GALQhFAE6fhBNwADE409.mp3"],"timeLength":322}
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+{"fileHead":100,"q":0,"extra":{"320filesize":12881501,"sqfilesize":34352677,"sqhash":"0245706E8BDA720DC903F2565685BEFC","128hash":"458E9B9F362277AC37E9EEF1CB80B535","320hash":"DE467D3F99FDEC803A7CF9E33F9EC82C","128filesize":5152644},"fileSize":5152644,"choricSinger":"王琪","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20190409\/20190409185926917041.jpg","topic_remark":"","url":"http:\/\/fs.open.kugou.com\/b0c2c098c28deda0955080db9e6e866e\/5cda2700\/G157\/M05\/02\/15\/PYcBAFyse1GALQhFAE6fhBNwADE409.mp3","time":1557800813,"trans_param":{"cid":67373062,"pay_block_tpl":1,"musicpack_advance":0,"display_rate":0,"display":0},"albumid":18712576,"singerName":"王琪","topic_url":"","extName":"mp3","songName":"万爱千恩","singerHead":"","hash":"458E9B9F362277AC37E9EEF1CB80B535","mvhash":"","store_type":"audio","error":"","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20190306\/20190306180911103.jpg","album_audio_id":143558061,"area_code":"1","ctype":1009,"128privilege":8,"bitRate":128,"status":1,"stype":11323,"req_hash":"458E9B9F362277AC37E9EEF1CB80B535","320privilege":10,"intro":"","singerId":86969,"privilege":8,"fileName":"王琪 - 万爱千恩","errcode":0,"sqprivilege":10,"backup_url":["http:\/\/fs.open2.kugou.com\/201905141025\/0d7228f8f784c6c961329001929d27a6\/G157\/M05\/02\/15\/PYcBAFyse1GALQhFAE6fhBNwADE409.mp3"],"timeLength":322}
+/song_search_v2?keyword=%E7%88%B1%E7%9A%84%E4%BE%9B%E5%85%BB&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E7%88%B1%E7%9A%84%E4%BE%9B%E5%85%BB&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
 API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=9A24F662F029AF21198CB63387BA4239
+/app/i/getSongInfo.php?cmd=playInfo&hash=106E6998A3B95D6B365A05D9787AA9CF
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=106E6998A3B95D6B365A05D9787AA9CF HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=34867B5417A51CF13F799970CFEAB754
-getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=E74E56BE4097507F1ABC204E7DC00D9A
-getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=A1CE572E83E09CC9FA67B939C88E8F5F
-getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=A1CE572E83E09CC9FA67B939C88E8F5F
-getMusicInfo:API请求完成
-/song_search_v2?callback=jQuery191034642999175022426_1489023388639&keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=100&userid=-1&clientver=&platform=WebFilter&filter=2&iscorrection=1&privilege_filter=0
+{"fileHead":100,"q":0,"extra":{"320filesize":9037497,"sqfilesize":23780698,"sqhash":"76EE816A786D7DA2927451A908CCA480","128hash":"106E6998A3B95D6B365A05D9787AA9CF","320hash":"428050100A4EC05D21F256EC0BE7FA98","128filesize":3505063},"fileSize":3505063,"choricSinger":"杨幂","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20160908\/20160908043517584601.jpg","topic_remark":"","url":"http:\/\/fs.open.kugou.com\/d3ae707a53bf7dd365d60f8db98841e7\/5cda2782\/G080\/M07\/0D\/01\/MJQEAFguyoOAc73BADV7p2I0lQ4346.mp3","time":1557800834,"trans_param":{"cid":5842623,"pay_block_tpl":1,"musicpack_advance":0,"display_rate":0,"display":0},"albumid":7551016,"singerName":"杨幂","topic_url":"","extName":"mp3","songName":"爱的供养","singerHead":"","hash":"106E6998A3B95D6B365A05D9787AA9CF","intro":"","store_type":"audio","error":"","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20170714\/20170714173917746.jpg","album_audio_id":101853893,"area_code":"1","bitRate":128,"128privilege":8,"req_hash":"106E6998A3B95D6B365A05D9787AA9CF","status":1,"stype":11323,"mvhash":"","320privilege":10,"privilege":8,"singerId":6700,"ctype":1009,"fileName":"杨幂 - 爱的供养","errcode":0,"sqprivilege":10,"backup_url":["http:\/\/fs.open2.kugou.com\/201905141027\/d7e612fb07d66a77faf8e820b7dbf815\/G080\/M07\/0D\/01\/MJQEAFguyoOAc73BADV7p2I0lQ4346.mp3"],"timeLength":219}
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
 API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=56BCEABD54BE6455C91335CCBEC741A0
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=AEDAB6D1E498499D6BE344A748CB03D6
+{"fileHead":0,"q":0,"extra":{"320filesize":8608960,"sqfilesize":25058814,"sqhash":"B2C0A23919EEE8B47831FFAA2604107F","128hash":"5FCE4CBCB96D6025033BCE2025FC3943","320hash":"2398DDFC7C7420AB22A77DFEAE4CA551","128filesize":3443771},"fileSize":0,"choricSinger":"周杰伦","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20160623\/20160623233610830051.jpg","topic_remark":"","url":"","time":1557803126,"trans_param":{"cid":5678206,"pay_block_tpl":1,"musicpack_advance":1,"display_rate":0,"display":0,"hash_offset":{"offset_hash":"A635FEFCF2F1831CA1F53A9508A9777C","start_byte":0,"end_ms":60000,"file_type":0,"start_ms":0,"end_byte":960129}},"albumid":1645030,"singerName":"周杰伦","topic_url":"","extName":"","songName":"告白气球","singerHead":"","hash":"5FCE4CBCB96D6025033BCE2025FC3943","intro":"","store_type":"audio","error":"需要付费","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20180515\/20180515002522714.jpg","album_audio_id":39612569,"area_code":"1","bitRate":0,"128privilege":10,"req_hash":"5FCE4CBCB96D6025033BCE2025FC3943","status":0,"stype":11211,"mvhash":"","320privilege":10,"privilege":10,"singerId":3520,"ctype":1003,"fileName":"周杰伦 - 告白气球","errcode":0,"sqprivilege":10,"backup_url":{},"timeLength":0}
+getmusicinfo:返回json解析错误！
+getMusicInfo:server_error
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=D9056CAEF52789770D3B6909BADFB53B
+{"fileHead":0,"q":0,"extra":{"320filesize":8608960,"sqfilesize":25058814,"sqhash":"B2C0A23919EEE8B47831FFAA2604107F","128hash":"5FCE4CBCB96D6025033BCE2025FC3943","320hash":"2398DDFC7C7420AB22A77DFEAE4CA551","128filesize":3443771},"fileSize":0,"choricSinger":"周杰伦","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20160623\/20160623233610830051.jpg","topic_remark":"","url":"","time":1557803132,"trans_param":{"cid":5678206,"pay_block_tpl":1,"musicpack_advance":1,"display_rate":0,"display":0,"hash_offset":{"offset_hash":"A635FEFCF2F1831CA1F53A9508A9777C","start_byte":0,"start_ms":0,"file_type":0,"end_ms":60000,"end_byte":960129}},"albumid":1645030,"singerName":"周杰伦","topic_url":"","extName":"","songName":"告白气球","singerHead":"","hash":"5FCE4CBCB96D6025033BCE2025FC3943","mvhash":"","store_type":"audio","error":"需要付费","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20180515\/20180515002522714.jpg","album_audio_id":39612569,"area_code":"1","ctype":1003,"128privilege":10,"bitRate":0,"status":0,"stype":11211,"req_hash":"5FCE4CBCB96D6025033BCE2025FC3943","320privilege":10,"intro":"","singerId":3520,"privilege":10,"fileName":"周杰伦 - 告白气球","errcode":0,"sqprivilege":10,"backup_url":{},"timeLength":0}
+getmusicinfo:返回json解析错误！
+getMusicInfo:server_error
+/app/i/getSongInfo.php?cmd=playInfo&hash=1FBE18E972D6ADAC9468F6C60AC78450
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=1FBE18E972D6ADAC9468F6C60AC78450 HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=458E9B9F362277AC37E9EEF1CB80B535
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=9198B18815EE8CE42AE368AE29276F78
+{"fileHead":100,"q":0,"extra":{"320filesize":0,"sqfilesize":0,"sqhash":"","128hash":"1FBE18E972D6ADAC9468F6C60AC78450","320hash":"","128filesize":3661130},"fileSize":3661130,"choricSinger":"周杰伦","album_img":"","topic_remark":"","url":"http:\/\/fs.open.kugou.com\/337b03b6e71f20144236e577c306fac2\/5cda30a6\/G056\/M05\/14\/03\/GJQEAFaDlvmATfKIADfdSv0jl7Y653.mp3","time":1557803174,"trans_param":{"cid":-1,"pay_block_tpl":1,"musicpack_advance":0,"display_rate":0,"display":0},"albumid":0,"singerName":"周杰伦","topic_url":"","extName":"mp3","songName":"青花瓷","singerHead":"","hash":"1FBE18E972D6ADAC9468F6C60AC78450","intro":"","store_type":"audio","error":"","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20180515\/20180515002522714.jpg","album_audio_id":57723505,"area_code":"1","bitRate":128,"128privilege":0,"req_hash":"1FBE18E972D6ADAC9468F6C60AC78450","status":1,"stype":11323,"mvhash":"","320privilege":0,"privilege":0,"singerId":3520,"ctype":1009,"fileName":"周杰伦 - 青花瓷 (2015江苏卫视新年演唱会)","errcode":0,"sqprivilege":0,"backup_url":["http:\/\/fs.open2.kugou.com\/201905141106\/fe807f8d7ed5a9230f09a9c49ecc8faa\/G056\/M05\/14\/03\/GJQEAFaDlvmATfKIADfdSv0jl7Y653.mp3"],"timeLength":229}
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=8B7DF540F77042FB76DA1EE3A79EAE0A
+{"fileHead":0,"q":0,"extra":{"320filesize":8608960,"sqfilesize":25058814,"sqhash":"B2C0A23919EEE8B47831FFAA2604107F","128hash":"5FCE4CBCB96D6025033BCE2025FC3943","320hash":"2398DDFC7C7420AB22A77DFEAE4CA551","128filesize":3443771},"fileSize":0,"choricSinger":"周杰伦","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20160623\/20160623233610830051.jpg","topic_remark":"","url":"","time":1557803561,"trans_param":{"cid":5678206,"pay_block_tpl":1,"musicpack_advance":1,"display_rate":0,"display":0,"hash_offset":{"offset_hash":"A635FEFCF2F1831CA1F53A9508A9777C","start_byte":0,"start_ms":0,"file_type":0,"end_ms":60000,"end_byte":960129}},"albumid":1645030,"singerName":"周杰伦","topic_url":"","extName":"","songName":"告白气球","singerHead":"","hash":"5FCE4CBCB96D6025033BCE2025FC3943","mvhash":"","store_type":"audio","error":"需要付费","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20180515\/20180515002522714.jpg","album_audio_id":39612569,"area_code":"1","ctype":1003,"128privilege":10,"bitRate":0,"status":0,"stype":11211,"req_hash":"5FCE4CBCB96D6025033BCE2025FC3943","320privilege":10,"intro":"","singerId":3520,"privilege":10,"fileName":"周杰伦 - 告白气球","errcode":0,"sqprivilege":10,"backup_url":{},"timeLength":0}
+getmusicinfo:返回json解析错误！
+getMusicInfo:server_error
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=458E9B9F362277AC37E9EEF1CB80B535
+{"fileHead":0,"q":0,"extra":{"320filesize":8608960,"sqfilesize":25058814,"sqhash":"B2C0A23919EEE8B47831FFAA2604107F","128hash":"5FCE4CBCB96D6025033BCE2025FC3943","320hash":"2398DDFC7C7420AB22A77DFEAE4CA551","128filesize":3443771},"fileSize":0,"choricSinger":"周杰伦","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20160623\/20160623233610830051.jpg","topic_remark":"","url":"","time":1557803583,"trans_param":{"cid":5678206,"pay_block_tpl":1,"musicpack_advance":1,"display_rate":0,"display":0,"hash_offset":{"offset_hash":"A635FEFCF2F1831CA1F53A9508A9777C","start_byte":0,"start_ms":0,"file_type":0,"end_ms":60000,"end_byte":960129}},"albumid":1645030,"singerName":"周杰伦","topic_url":"","extName":"","songName":"告白气球","singerHead":"","hash":"5FCE4CBCB96D6025033BCE2025FC3943","mvhash":"","store_type":"audio","error":"需要付费","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20180515\/20180515002522714.jpg","album_audio_id":39612569,"area_code":"1","ctype":1003,"128privilege":10,"bitRate":0,"status":0,"stype":11211,"req_hash":"5FCE4CBCB96D6025033BCE2025FC3943","320privilege":10,"intro":"","singerId":3520,"privilege":10,"fileName":"周杰伦 - 告白气球","errcode":0,"sqprivilege":10,"backup_url":{},"timeLength":0}
+getmusicinfo:返回json解析错误！
+getMusicInfo:server_error
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成
-/yy/index.php?r=play/getdata&callback=jQuery19108833191028495151_1551681176079&hash=8B7DF540F77042FB76DA1EE3A79EAE0A
+{"fileHead":0,"q":0,"extra":{"320filesize":8608960,"sqfilesize":25058814,"sqhash":"B2C0A23919EEE8B47831FFAA2604107F","128hash":"5FCE4CBCB96D6025033BCE2025FC3943","320hash":"2398DDFC7C7420AB22A77DFEAE4CA551","128filesize":3443771},"fileSize":0,"choricSinger":"周杰伦","album_img":"http:\/\/imge.kugou.com\/stdmusic\/{size}\/20160623\/20160623233610830051.jpg","topic_remark":"","url":"","time":1557804196,"trans_param":{"cid":5678206,"pay_block_tpl":1,"musicpack_advance":1,"display_rate":0,"display":0,"hash_offset":{"offset_hash":"A635FEFCF2F1831CA1F53A9508A9777C","start_byte":0,"end_ms":60000,"file_type":0,"start_ms":0,"end_byte":960129}},"albumid":1645030,"singerName":"周杰伦","topic_url":"","extName":"","songName":"告白气球","singerHead":"","hash":"5FCE4CBCB96D6025033BCE2025FC3943","intro":"","store_type":"audio","error":"需要付费","imgUrl":"http:\/\/singerimg.kugou.com\/uploadpic\/softhead\/{size}\/20180515\/20180515002522714.jpg","album_audio_id":39612569,"area_code":"1","bitRate":0,"128privilege":10,"req_hash":"5FCE4CBCB96D6025033BCE2025FC3943","status":0,"stype":11211,"mvhash":"","320privilege":10,"privilege":10,"singerId":3520,"ctype":1003,"fileName":"周杰伦 - 告白气球","errcode":0,"sqprivilege":10,"backup_url":{},"timeLength":0}
+getmusicinfo:返回json解析错误！
+getMusicInfo:server_error
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=0FFF5535CE1862EC37D590688A586B9D
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=0FFF5535CE1862EC37D590688A586B9D HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=1FBE18E972D6ADAC9468F6C60AC78450
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=1FBE18E972D6ADAC9468F6C60AC78450 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=C7BEDC28088FCDB6D67E5DF592834E54
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=C7BEDC28088FCDB6D67E5DF592834E54 HTTP/1.0
+
+Host: m.kugou.com
+
 getMusicInfo:API请求完成

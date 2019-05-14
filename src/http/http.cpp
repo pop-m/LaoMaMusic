@@ -1,4 +1,5 @@
 #include<http.h>
+#include<debug_log.h>
 
 int hex_to_decade(char * s)
 {
@@ -61,6 +62,11 @@ int connect_to(int sock, char *hostname)
 	struct hostent *hs = gethostbyname(hostname);
 	if(hs == NULL)
 	{
+		Log log;
+		char err[50];
+		memset(err, 0x00, 50);
+		sprintf(err, "%s解析错误!", hostname);
+		log.write_log(err);
 		return -1;
 	}
 	struct sockaddr_in server_addr;
@@ -77,6 +83,11 @@ int connect_to(int sock, char *hostname)
 		}
 		else
 		{
+			Log log;
+			char err[50];
+			memset(err, 0x00, 50);
+			sprintf(err, "%s解析错误!", hostname);
+			log.write_log(err);
 			return -2;
 		}
 	}
@@ -122,11 +133,16 @@ void get_request(int sock, char* url, char* hostname)
 	//构造key的请求
 	char first_line[1024];
 	memset(first_line, 0x00, sizeof(first_line));
+	Log log;
 	sprintf(first_line, "GET %s HTTP/1.0\r\n", url);
+	log.write_log(first_line);
 	send(sock, first_line, strlen(first_line), 0);
+
 	char header_1[128];
 	memset(header_1, 0x00, sizeof(header_1));
 	sprintf(header_1, "Host: %s\r\n", hostname);
 	send(sock, header_1, strlen(header_1), 0);
+	log.write_log(header_1);
+
 	send(sock, "\r\n", 2, 0);
 }
