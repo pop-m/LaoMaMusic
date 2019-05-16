@@ -227,3 +227,242 @@
 	border: solid 4px white;
 	border-radius: 6px;
 }
+
+.lists{
+	position:absolute;
+	top: 10px;
+	right: 30px;
+	height: 32px;
+	width: 100px;
+}
+.play-list{
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	width: 26px;
+	height: 26px;
+	background-image: url("/img/playerlist.png");
+}
+.play-list:hover{
+	cursor: pointer;
+	background-image: url("/img/playerlistSelected.png")
+}
+.collect-list{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 32px;
+	height: 32px;
+	background-image: url("/img/collectList.png");
+}
+.collect-list:hover{
+	cursor: pointer;
+	background-image: url("/img/collectListSelected.png");
+}
+
+.play-list-content{
+	position: absolute;
+	bottom: 40px;
+	right: 50px;
+	width: 600px;
+	height: 350px;
+	border-style: solid;
+	border-radius: 10px 10px 0 0;
+}
+.play-list-content img{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+}
+.play-list-content-top{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 30px;
+	background-color: black;
+}
+.play-list-title{
+	position: absolute;
+	top:0px;
+	left: 10px;
+	width: 70px;
+	height: 100%;
+	line-height: 30px;
+	color: white;
+}
+.collect-all{
+	position: absolute;
+	top:0px;
+	right: 100px;
+	width: 90px;
+	height: 100%;
+	line-height: 30px;
+	color: white;
+	background-image: url("/img/playListRearrange.png");
+	background-size:25px 25px;
+	background-repeat: no-repeat;
+}
+.collect-all:hover{
+	color: red;
+	background-image: url("/img/playListRearrangeSelect.png");
+	cursor: pointer;
+}
+.play-list-gedang{
+	position: absolute;
+	top:0px;
+	right: 95px;
+	width: 3px;
+	height: 25px;
+	line-height: 25px;
+	color: white;
+}
+.clear-play-list{
+	position: absolute;
+	top:0px;
+	right: 0px;
+	width: 95px;
+	height: 100%;
+	line-height: 30px;
+	color: white;
+	background-image: url("/img/clearPlayList.png");
+	background-size:23px 23px;
+	background-repeat: no-repeat;
+}
+.clear-play-list:hover{
+	color: red;
+	background-image: url("/img/clearPlayListSelect.png");
+	cursor: pointer;
+}
+.play-list-data{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 590px;
+	height: 315px;
+}
+.play-list-row{
+	position: relative;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 28px;
+	margin-bottom: 2px;
+	
+}
+.play-list-play-status{
+	position: absolute;
+	top: -2px;
+	left:0px;
+	width: 28px;
+	height:28px;
+	line-height: 28px;
+	font-size: 28px;
+	color: red;
+}
+.play-list-mouseon{
+	background-color: black;
+	opacity:0.5;
+}
+.play-list-songName{
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	width: 390px;
+	height: 100%;
+	line-height: 28px;
+	font-size: 15px;
+	color: white;
+}
+.play-list-singer{
+	position: absolute;
+	top: 0px;
+	right: 55px;
+	width: 100px;
+	height: 100%;
+	line-height: 28px;
+	font-size: 15px;
+	color: white;
+}
+.play-list-time{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 50px;
+	height: 100%;
+	line-height: 28px;
+	font-size: 15px;
+	color: white;
+}
+.play-list-selected-view{
+	position: absolute;
+	top: 0px;
+	right: 170px;
+	width: 92px;
+	height: 100%;
+	display: none;
+}
+.play-list-selected{
+	position: relative;
+	display: inline-block;
+	top: 0px;
+	left:0px;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+}
+.play-list-selected-collect{
+	background-image: url("/img/playListCollect.png");
+}
+.play-list-selected-collect:hover{
+	cursor: pointer;
+	background-image: url("/img/playListCollectSelect.png");
+}
+.play-list-selected-download{
+	background-image: url("/img/playListDownload.png");
+}
+.play-list-selected-download:hover{
+	cursor: pointer;
+	background-image: url("/img/playListDownloadSelect.png");
+}
+.play-list-selected-remove{
+	background-image: url("/img/playListRemove.png");
+}
+.play-list-selected-remove:hover{
+	cursor: pointer;
+	background-image: url("/img/playListRemoveSelect.png");
+}
+.play-list-rearrange{
+	position: absolute;
+	top: 0px;
+	right: 170px;
+	width: 60px;
+	height: 100%;
+}
+.play-list-up-down{
+	position: relative;
+	display: inline-block;
+	top: 0px;
+	left:0px;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+}
+.play-list-up{
+	background-image: url("/img/playListUp.png");
+}
+.play-list-up:hover{
+	cursor: pointer;
+	background-image: url("/img/playListUpSelect.png");
+}
+.play-list-down{
+	background-image: url("/img/playListDown.png");
+}
+.play-list-down:hover{
+	cursor: pointer;
+	background-image: url("/img/playListDownSelect.png");
+}

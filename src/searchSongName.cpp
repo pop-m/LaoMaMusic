@@ -93,9 +93,18 @@ int search_music(const char* query_string)
 				ele["Duration"] = music_list[i]["Duration"].asInt();
 				return_json.append(ele);
 			}
-			std::cout<<"Content-Type: application/json\r\n";
-			std::cout<<"\r\n";
-			std::cout<<return_json.toStyledString()<<"\r\n";
+			Json::Value result;
+			if(return_json.empty()){
+				result["status"] = 0;
+				result["error"] = "您的搜索无结果";
+			}else{
+				result["status"] = 1;
+				result["error"] = "";
+				result["values"] = return_json;
+			}
+			std::cout << "Content-Type: application/json\r\n";
+			std::cout << "\r\n";
+			std::cout << result.toStyledString() << "\r\n";
 			return 0;
 
 		}else{

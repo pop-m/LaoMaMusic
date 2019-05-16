@@ -7,8 +7,10 @@ var only_control=1;//0：鼠标控制进度条 1:音乐事件控制进度条
 var eve = event || window.event;
 var deg_stat;//用于存储图片旋转的定时器
 var get_time;//用于存储进度条的定时器
+var ajax_timeout;//用于存储ajax请求的定时器
 var page_width = 20;//页面宽度 
 var page_cur = 1;//当前的页码
+var ajax_status = 0; //0代表当前没有进行ajax操作，1代表当前正在进行ajax请求
 window.onload=function(){
 	"use strict";
 	document.getElementById("show_login").onclick = shog_login;//点击登录按钮显示登录窗口
@@ -21,15 +23,23 @@ window.onload=function(){
 	document.getElementById("cur_point").onmousedown = change_time;//拖动进度条
 	document.getElementById("volume_cur").onmousedown = change_volume;//拖动音量条
 	document.getElementById("ranking_list").onclick = show_ranking_list;//显示排行榜
-	get_music_page_list("/rankingList.json");
-	flush_page();
+	show_ranking_list();
 	document.getElementById("search_box").onkeydown = submit_search;//提交搜索框
+	document.getElementById("play_list").onclick = showorclose_play_list;//显示播放列表
+	document.getElementById("collect_list").onclick = show_collect_list;//显示收藏列表
 };
 
 //显示排行榜
 function show_ranking_list()
 {
-	get_music_page_list("/rankingList.json");
+	if(ajax_status == 1){
+		//当前还有未完成的ajax请求
+		clearInterval(ajax_timeout);
+		http_request.abort();
+		ajax_status = 0;
+	}
+	ajax_status = 1;
+	ajax_for_json("/rankingList.json", page_list);
 	flush_page();
 }
 //显示登录窗口
@@ -97,8 +107,19 @@ function submit_search(eve)
 		//method： "GET"
 		//param: "Name:XXXX"
 		//headers: "cookie:xxxx"
+		if(ajax_status === 1){
+			//如果当前还有未完成的ajax请求，那就将其先进行关闭
+			http_request.abort();
+			clearInterval(ajax_timeout);
+			ajax_status = 0;
+		}
+		//将当前的结果进行清空
+		var html_code = "";
+		document.getElementById("search_res").innerHTML = html_code;
+		document.getElementById("page_num_area").innerHTML = html_code;
 		var query_string = {"keyword":document.getElementById("search_box").value};
-		get_music_page_list("/cgi/searchSongName.cgi",query_string);
+		ajax_status = 1;
+		ajax_for_json("/cgi/searchSongName.cgi", page_list, query_string);
 		flush_page();
 	}
 
@@ -329,23 +350,29 @@ function change_music(num)
 {
 	"use strict";
 	//ajax请求音乐信息并加入播放列表
-	var query_string = {"fileHash":page_list.value[num].FileHash};
+	if(ajax_status === 1){
+		http_request.abort();
+		clearInterval(ajax_timeout);
+		ajax_status = 0;
+	}
+	var query_string = {"fileHash":page_list.value.values[num].FileHash};
 	var time_total = 0;
 	//ajax请求音乐信息
-	get_music_info("/cgi/getMusicInfo.cgi",query_string);
-	var ajax_timeout = setInterval(function(){
+	ajax_status = 1;
+	ajax_for_json("/cgi/getMusicInfo.cgi", music_info, query_string);
+	ajax_timeout = setInterval(function(){
 		if(music_info.status === 1){
 			//ajax获取到了数据
+			clearInterval(ajax_timeout);
+			ajax_status = 0;
 			//如果获取的音乐是付费的，那就之进行alert即可
 			if(music_info.value.error != ""){
 				alert(music_info.value.error);
-				clearInterval(ajax_timeout);
 				return;
 			}
 			//添加至播放器的播放列表
-			add_to_list(music_info.value.song_name,music_info.value.play_url,music_info.value.author_name,music_info.value.img,music_info.value.timelength);
+			add_to_list(music_info.value.song_name,music_info.value.play_url,music_info.value.author_name,music_info.value.img,parseInt(music_info.value.timelength)*1000);
 			//重绘完成
-			clearInterval(ajax_timeout);
 			music_info.status = 0;
 
 			//播放最后一首歌曲
@@ -365,6 +392,8 @@ function change_music(num)
 			//ajax还没有获取到数据
 			if(40 <= time_total++){
 				clearInterval(ajax_timeout);
+				http_request.abort();
+				ajax_status = 0;
 				alert("你的网络貌似不太好！");
 			}
 		}
@@ -376,21 +405,30 @@ function download_music(num)
 	"use strict";
 	//进行ajax请求通过hash获取音乐的url以及img的url
 
+	if(ajax_status === 1){
+		http_request.abort();
+		clearInterval(ajax_timeout);
+		ajax_status = 0;
+	}
 	//ajax请求音乐信息并加入播放列表
-	var query_string = {"fileHash":page_list.value[num].FileHash};
+	var query_string = {"fileHash":page_list.value.values[num].FileHash};
 	var time_total = 0;
 	//ajax请求音乐信息
-	get_music_info("/cgi/getMusicInfo.cgi",query_string);
-	var ajax_timeout = setInterval(function(){
+	ajax_status = 1;
+	ajax_for_json("/cgi/getMusicInfo.cgi", music_info, query_string);
+	ajax_timeout = setInterval(function(){
 		if(music_info.status === 1){
 			//ajax获取到了数据
 			clearInterval(ajax_timeout);
+			ajax_status = 0;
 			window.open(music_info.value.play_url,"_blank");
 		}
 		else{
 			//ajax还没有获取到数据
 			if(40 <= time_total++){
 				clearInterval(ajax_timeout);
+				http_request.abort();
+				ajax_status = 0;
 				alert("你的网络貌似不太好！");
 			}
 		}
@@ -402,8 +440,8 @@ function flush_music_list()
 	"use strict";
 	var html_code = '';
 	var right_border = page_cur*page_width;
-	if(right_border > page_list.value.length){
-		right_border = page_list.value.length;
+	if(right_border > page_list.value.values.length){
+		right_border = page_list.value.values.length;
 	}
 	for(var i=(page_cur-1)*page_width; i<right_border; i++){
 		html_code += '\
@@ -414,15 +452,15 @@ function flush_music_list()
 			<div class="ui-col ui-col-song overflow-style">\
 				<div class="ui-name-singer">\
 					<div class="ui-music-name-singer">\
-						<p class="ui-name-text">'+page_list.value[i].SongName+'</p>\
+						<p class="ui-name-text">'+page_list.value.values[i].SongName+'</p>\
 					</div>\
 					<div class="ui-music-name-singer">\
-						<p class="ui-singer-text">'+page_list.value[i].SingerName+'</p>\
+						<p class="ui-singer-text">'+page_list.value.values[i].SingerName+'</p>\
 					</div>\
 				</div>\
 			</div>\
 			<div class="ui-col ui-col-album">\
-				<p class="ui-text ui-album-text overflow-style">'+page_list.value[i].AlbumName+'</p>\
+				<p class="ui-text ui-album-text overflow-style">'+page_list.value.values[i].AlbumName+'</p>\
 			</div>\
 			<div class="ui-col ui-col-play">\
 				<img src="img/play_ico.png" class="ui-song-play-img" alt="" onclick="change_music('+i+')"/>\
@@ -431,7 +469,7 @@ function flush_music_list()
 				<img src="img/down_ico.png" class="ui-song-play-img" alt="" onclick="download_music('+i+')"/>\
 			</div>\
 			<div class="ui-col ui-col-time">\
-				<p class="ui-text ui-time-text">'+ms_to_time(page_list.value[i].Duration)+'</p>\
+				<p class="ui-text ui-time-text">'+ms_to_time(page_list.value.values[i].Duration)+'</p>\
 			</div>\
 		</div>';
 	}
@@ -539,23 +577,34 @@ function flush_page()
 {
 	"use strict";
 	var time_total = 0;
-	var ajax_timeout = setInterval(function(){
+	ajax_timeout = setInterval(function(){
 		if(page_list.status === 1){
+			clearInterval(ajax_timeout);
+			ajax_status = 0;
 			//ajax获取到了数据
+			if(page_list.value.status === 0){
+				//搜索结果出问题
+				alert(page_list.value.error);
+				page_list.status = 0;
+				return;
+			}
+			page_list.num = page_list.value.values.length;
+			console.log(page_list.num);
 			//渲染页面
 			flush_music_list();
 			page_cur = 1;
 			flush_pagenum_table();			
 			//重绘完成
-			clearInterval(ajax_timeout);
 			page_list.status = 0;
 		}
 		else{
 			//ajax还没有获取到数据
 			if(40 <= time_total++){
 				clearInterval(ajax_timeout);
+				http_request.abort();
+				page_list.status = 0;
+				ajax_status = 0;
 				alert("你的网络貌似不太好！");
-
 			}
 		}
 	},500);

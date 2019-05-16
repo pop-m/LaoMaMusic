@@ -83,7 +83,7 @@ int search_music(const char* query_string)
 			Json::Value ele;
 			ele["author_name"] = root["singerName"].asCString();
 			ele["song_name"] = root["songName"].asCString();
-			ele["timelength"] = root["time"].asInt();
+			ele["timelength"] = root["timeLength"].asInt();
 			ele["play_url"] = root["url"].asCString();
 			std::string img_url = root["imgUrl"].asString();
 			size_t pos = img_url.find("{size}");

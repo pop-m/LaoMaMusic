@@ -9,6 +9,7 @@
 <script type="text/javascript" src="js/ui.js"></script>
 <script type="text/javascript" src="js/player.js"></script>
 <script type="text/javascript" src="js/ajax_ui.js"></script>
+<script type="text/javascript" src="js/list_ui.js"></script>
 <link rel="shortcut icon" href="img/logo.ico">
 </head>
 <body>
@@ -111,7 +112,7 @@
 		</div>
 		<div class="player"><!-- 播放器面板 -->
 			<div class="mp3-player-img"><!-- 音乐图片盒子 -->
-				<img src="https://api.hibai.cn/music/Music/Music?id=1313354324&amp;type=pic" class="player-img-style" alt="" id="music_img" style="transform:rotate(0deg);" />
+				<img src="img/default-music-img.png" class="player-img-style" alt="" id="music_img" style="transform:rotate(0deg);" />
 			</div>
 			<div class="mp3-player-control"><!-- 播放器控制区 -->
 				<div class="player-title"><!-- 歌曲名字和演唱者 -->
@@ -127,6 +128,142 @@
 					</div>
 					<div class="next-circle">
 						<img src="img/next.png" alt="" class="next-ico ico-action" id="player_next"><!-- 下一曲 -->
+					</div>
+				</div>
+				<div class ="lists"><!-- 音乐列表和收藏列表区域 -->
+					<div class="play-list" id="play_list"><!-- 播放列表 --></div>
+					<div class="play-list-content" id="play_list_content"><!-- 播放列表主体 -->
+						<img src="img/listBackImg.jpg" alt="">
+						<div class="play-list-content-top"><!-- 顶栏 -->
+							<span class="play-list-title"><!-- 播放列表标题 -->
+								<strong>播放列表</strong>
+							</span>
+							<span class="collect-all"><!-- 收藏全部按钮 -->
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调整顺序
+							</span>
+							<span class="play-list-gedang">|</span>
+							<span class="clear-play-list"><!-- 清除播放列表 -->
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清楚全部
+							</span>
+						</div>
+						<div class="play-list-data"><!-- 播放列表数据 -->
+							<div class="play-list-row"><!-- 一条 -->
+								<div class="play-list-play-status"><!-- 播放状态 -->
+									
+								</div>
+								<div class="play-list-songName"><!-- 歌曲名 -->
+									最炫民族风
+								</div>
+								<div class="play-list-singer"><!-- 演唱者 -->
+									凤凰传奇
+								</div>
+								<div class="play-list-time"><!-- 时间 -->
+									04:00
+								</div>
+							</div>
+							<div class="play-list-row play-list-mouseon"><!-- 一条 -->
+								<div class="play-list-play-status"><!-- 播放状态 -->
+								
+								</div>
+								<div class="play-list-songName"><!-- 歌曲名 -->
+									最炫民族风
+								</div>
+								<div class="play-list-singer"><!-- 演唱者 -->
+									凤凰传奇
+								</div>
+								<div class="play-list-time"><!-- 时间 -->
+									04:00
+								</div>
+								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
+									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
+									</div>
+									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
+									</div>
+									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
+									</div>
+								</div>
+								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
+									<div class="play-list-up-down play-list-up">
+									</div>
+									<div class="play-list-up-down play-list-down">
+									</div>
+								</div>
+							</div>
+							<div class="play-list-row"><!-- 一条 -->
+								<div class="play-list-play-status"><!-- 播放状态 -->
+									►
+								</div>
+								<div class="play-list-songName"><!-- 歌曲名 -->
+									最炫民族风
+								</div>
+								<div class="play-list-singer"><!-- 演唱者 -->
+									凤凰传奇
+								</div>
+								<div class="play-list-time"><!-- 时间 -->
+									04:00
+								</div>
+							</div>
+							<div class="play-list-row"><!-- 一条 -->
+								<div class="play-list-play-status"><!-- 播放状态 -->
+								
+								</div>
+								<div class="play-list-songName"><!-- 歌曲名 -->
+									最炫民族风
+								</div>
+								<div class="play-list-singer"><!-- 演唱者 -->
+									凤凰传奇
+								</div>
+								<div class="play-list-time"><!-- 时间 -->
+									04:00
+								</div>
+							</div>
+							<div class="play-list-row"><!-- 一条 -->
+								<div class="play-list-play-status"><!-- 播放状态 -->
+								
+								</div>
+								<div class="play-list-songName"><!-- 歌曲名 -->
+									最炫民族风
+								</div>
+								<div class="play-list-singer"><!-- 演唱者 -->
+									凤凰传奇
+								</div>
+								<div class="play-list-time"><!-- 时间 -->
+									04:00
+								</div>
+							</div>
+							<div class="play-list-row"><!-- 一条 -->
+								<div class="play-list-play-status"><!-- 播放状态 -->
+								
+								</div>
+								<div class="play-list-songName"><!-- 歌曲名 -->
+									最炫民族风
+								</div>
+								<div class="play-list-singer"><!-- 演唱者 -->
+									凤凰传奇
+								</div>
+								<div class="play-list-time"><!-- 时间 -->
+									04:00
+								</div>
+							</div>
+							<div class="play-list-row"><!-- 一条 -->
+								<div class="play-list-play-status"><!-- 播放状态 -->
+								
+								</div>
+								<div class="play-list-songName"><!-- 歌曲名 -->
+									最炫民族风
+								</div>
+								<div class="play-list-singer"><!-- 演唱者 -->
+									凤凰传奇
+								</div>
+								<div class="play-list-time"><!-- 时间 -->
+									04:00
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="collect-list" id="collect_list"><!-- 收藏列表 --></div>
+					<div class="collect-list-content"><!-- 收藏列表主体 -->
+
 					</div>
 				</div>
 				<div class="player-controller"><!-- 进度条区域 -->

@@ -185,3 +185,461 @@ GET /app/i/getSongInfo.php?cmd=playInfo&hash=C7BEDC28088FCDB6D67E5DF592834E54 HT
 Host: m.kugou.com
 
 getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=A11F7A8BD2EA5BBDB32F58A9081F27B4
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=A11F7A8BD2EA5BBDB32F58A9081F27B4 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=perfect&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=perfect&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=398756A2FABF4522F7287ACA51182EBD
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=398756A2FABF4522F7287ACA51182EBD HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=398756A2FABF4522F7287ACA51182EBD
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=398756A2FABF4522F7287ACA51182EBD HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=taylorswift&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=taylorswift&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=taylor&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=taylor&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=taylor%20swift&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=taylor%20swift&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=EF7E79A4F513AE1A41A56A8E8AB17C14
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=EF7E79A4F513AE1A41A56A8E8AB17C14 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=8CEC5801BD93D003F5D880C576A0A22E
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=8CEC5801BD93D003F5D880C576A0A22E HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=98B683E0AB6C360324CC9ED0F035BEF8
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=98B683E0AB6C360324CC9ED0F035BEF8 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=88558A00A15BEA4EC3E63C06538BDC97
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=88558A00A15BEA4EC3E63C06538BDC97 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=A081B121EEA6EAE3A20E620F6FAEA719
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=A081B121EEA6EAE3A20E620F6FAEA719 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=A081B121EEA6EAE3A20E620F6FAEA719
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=A081B121EEA6EAE3A20E620F6FAEA719 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7CF4CB3C89B88C4B62AC91BEF3D4362E
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7CF4CB3C89B88C4B62AC91BEF3D4362E HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=2B1634EBCE571BF2789CD7FB93C3E822
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=2B1634EBCE571BF2789CD7FB93C3E822 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=BE8CBC6B7F328B76091522FC729301BB
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=BE8CBC6B7F328B76091522FC729301BB HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=07FE757FE5BE9798EA74DC39406DA0C5
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=07FE757FE5BE9798EA74DC39406DA0C5 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=%E5%AD%9F%E5%AD%90%E5%9D%A4&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%AD%9F%E5%AD%90%E5%9D%A4&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=92F4D81A8B3EA68A80B2605A11EE4300
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=92F4D81A8B3EA68A80B2605A11EE4300 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=ED208EA5543435B6DE762E35F0AA65B8
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=ED208EA5543435B6DE762E35F0AA65B8 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=A11F7A8BD2EA5BBDB32F58A9081F27B4
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=A11F7A8BD2EA5BBDB32F58A9081F27B4 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=%E7%BB%BF%E8%89%B2&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E7%BB%BF%E8%89%B2&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=151010DE77D6CAD1205483C4195EB286
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=151010DE77D6CAD1205483C4195EB286 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=%E7%BB%BF%E8%89%B2&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E7%BB%BF%E8%89%B2&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=1&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=1&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=1&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=12&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=12&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+/song_search_v2?keyword=123&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=123&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=82DE901F9FD8681E5F4DBF601E08DF3F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=82DE901F9FD8681E5F4DBF601E08DF3F HTTP/1.0
+
+Host: m.kugou.com
+
+/app/i/getSongInfo.php?cmd=playInfo&hash=95E78C42591D18A73F98008CD0B172C3
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=95E78C42591D18A73F98008CD0B172C3 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+getMusicInfo:API请求完成
+/song_search_v2?keyword=123&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=123&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+/song_search_v2?keyword=1232&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1232&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+/song_search_v2?keyword=12322&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=12322&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+/song_search_v2?keyword=123222&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=123222&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+API请求完成
+API请求完成
+/song_search_v2?keyword=1232222&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1232222&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+API请求完成
+/song_search_v2?keyword=123333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=123333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=123333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=123333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=12333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=12333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=1233333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1233333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=1233333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1233333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=%E6%9C%80%E7%82%AB%E6%B0%91%E6%97%8F%E9%A3%8E&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E6%9C%80%E7%82%AB%E6%B0%91%E6%97%8F%E9%A3%8E&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=1233333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1233333&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=123&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=123&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+/song_search_v2?keyword=1233&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1233&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+API请求完成
+/song_search_v2?keyword=1233&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1233&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=1233&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1233&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=1233&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=1233&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=12&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=12&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=12&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=12&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=123&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=123&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=12&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=12&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=8D9E2D1038B60EA9046B9B3C948B310B
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=8D9E2D1038B60EA9046B9B3C948B310B HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+API请求完成
+API请求完成
+[error] [key word:%E5%91%A8%E6%9D%B0]search error!
+server_error
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=A11F7A8BD2EA5BBDB32F58A9081F27B4
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=A11F7A8BD2EA5BBDB32F58A9081F27B4 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
