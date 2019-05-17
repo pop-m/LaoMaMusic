@@ -138,7 +138,7 @@
 							<span class="play-list-title"><!-- 播放列表标题 -->
 								<strong>播放列表</strong>
 							</span>
-							<span class="collect-all"><!-- 收藏全部按钮 -->
+							<span class="rearrange-button" onclick="rearrange_button(this)"><!-- 调整顺序按钮 -->
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调整顺序
 							</span>
 							<span class="play-list-gedang">|</span>
@@ -146,8 +146,8 @@
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清楚全部
 							</span>
 						</div>
-						<div class="play-list-data"><!-- 播放列表数据 -->
-							<div class="play-list-row"><!-- 一条 -->
+						<div class="play-list-data" id="test"><!-- 播放列表数据 -->
+							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
 								<div class="play-list-play-status"><!-- 播放状态 -->
 									
 								</div>
@@ -160,8 +160,22 @@
 								<div class="play-list-time"><!-- 时间 -->
 									04:00
 								</div>
+								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
+									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
+									</div>
+									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
+									</div>
+									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
+									</div>
+								</div>
+								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
+									<div class="play-list-up-down play-list-up">
+									</div>
+									<div class="play-list-up-down play-list-down">
+									</div>
+								</div>
 							</div>
-							<div class="play-list-row play-list-mouseon"><!-- 一条 -->
+							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
 								<div class="play-list-play-status"><!-- 播放状态 -->
 								
 								</div>
@@ -189,7 +203,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="play-list-row"><!-- 一条 -->
+							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
 								<div class="play-list-play-status"><!-- 播放状态 -->
 									►
 								</div>
@@ -202,8 +216,22 @@
 								<div class="play-list-time"><!-- 时间 -->
 									04:00
 								</div>
+								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
+									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
+									</div>
+									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
+									</div>
+									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
+									</div>
+								</div>
+								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
+									<div class="play-list-up-down play-list-up">
+									</div>
+									<div class="play-list-up-down play-list-down">
+									</div>
+								</div>
 							</div>
-							<div class="play-list-row"><!-- 一条 -->
+							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
 								<div class="play-list-play-status"><!-- 播放状态 -->
 								
 								</div>
@@ -216,8 +244,22 @@
 								<div class="play-list-time"><!-- 时间 -->
 									04:00
 								</div>
+								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
+									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
+									</div>
+									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
+									</div>
+									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
+									</div>
+								</div>
+								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
+									<div class="play-list-up-down play-list-up">
+									</div>
+									<div class="play-list-up-down play-list-down">
+									</div>
+								</div>
 							</div>
-							<div class="play-list-row"><!-- 一条 -->
+							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
 								<div class="play-list-play-status"><!-- 播放状态 -->
 								
 								</div>
@@ -230,8 +272,22 @@
 								<div class="play-list-time"><!-- 时间 -->
 									04:00
 								</div>
+								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
+									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
+									</div>
+									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
+									</div>
+									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
+									</div>
+								</div>
+								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
+									<div class="play-list-up-down play-list-up">
+									</div>
+									<div class="play-list-up-down play-list-down">
+									</div>
+								</div>
 							</div>
-							<div class="play-list-row"><!-- 一条 -->
+							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
 								<div class="play-list-play-status"><!-- 播放状态 -->
 								
 								</div>
@@ -244,8 +300,22 @@
 								<div class="play-list-time"><!-- 时间 -->
 									04:00
 								</div>
+								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
+									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
+									</div>
+									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
+									</div>
+									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
+									</div>
+								</div>
+								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
+									<div class="play-list-up-down play-list-up">
+									</div>
+									<div class="play-list-up-down play-list-down">
+									</div>
+								</div>
 							</div>
-							<div class="play-list-row"><!-- 一条 -->
+							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
 								<div class="play-list-play-status"><!-- 播放状态 -->
 								
 								</div>
@@ -257,6 +327,20 @@
 								</div>
 								<div class="play-list-time"><!-- 时间 -->
 									04:00
+								</div>
+								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
+									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
+									</div>
+									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
+									</div>
+									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
+									</div>
+								</div>
+								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
+									<div class="play-list-up-down play-list-up">
+									</div>
+									<div class="play-list-up-down play-list-down">
+									</div>
 								</div>
 							</div>
 						</div>

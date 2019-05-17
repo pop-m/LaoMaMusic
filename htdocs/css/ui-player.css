@@ -293,7 +293,7 @@
 	line-height: 30px;
 	color: white;
 }
-.collect-all{
+.rearrange-button{
 	position: absolute;
 	top:0px;
 	right: 100px;
@@ -305,7 +305,7 @@
 	background-size:25px 25px;
 	background-repeat: no-repeat;
 }
-.collect-all:hover{
+.rearrange-button:hover{
 	color: red;
 	background-image: url("/img/playListRearrangeSelect.png");
 	cursor: pointer;
@@ -441,6 +441,7 @@
 	right: 170px;
 	width: 60px;
 	height: 100%;
+	display: none;
 }
 .play-list-up-down{
 	position: relative;
