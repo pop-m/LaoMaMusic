@@ -138,210 +138,21 @@
 							<span class="play-list-title"><!-- 播放列表标题 -->
 								<strong>播放列表</strong>
 							</span>
-							<span class="rearrange-button" onclick="rearrange_button(this)"><!-- 调整顺序按钮 -->
+							<span class="rearrange-button" onclick="rearrange_button(this)" onmousemove="rearrange_mouseon(this)" onmouseout="rearrange_mouseout(this)"><!-- 调整顺序按钮 -->
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调整顺序
 							</span>
 							<span class="play-list-gedang">|</span>
 							<span class="clear-play-list"><!-- 清除播放列表 -->
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清楚全部
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清除全部
 							</span>
 						</div>
-						<div class="play-list-data" id="test"><!-- 播放列表数据 -->
-							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
-								<div class="play-list-play-status"><!-- 播放状态 -->
-									
-								</div>
-								<div class="play-list-songName"><!-- 歌曲名 -->
-									最炫民族风
-								</div>
-								<div class="play-list-singer"><!-- 演唱者 -->
-									凤凰传奇
-								</div>
-								<div class="play-list-time"><!-- 时间 -->
-									04:00
-								</div>
-								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
-									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
-									</div>
-									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
-									</div>
-									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
-									</div>
-								</div>
-								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
-									<div class="play-list-up-down play-list-up">
-									</div>
-									<div class="play-list-up-down play-list-down">
-									</div>
-								</div>
-							</div>
-							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
-								<div class="play-list-play-status"><!-- 播放状态 -->
+						<div class="play-list-data" id="play_list_data"><!-- 播放列表数据显示部分 -->
+							<div class="play-list-data-all" style="top:0px;" id="play_list_data_all"><!-- 总体 -->
 								
-								</div>
-								<div class="play-list-songName"><!-- 歌曲名 -->
-									最炫民族风
-								</div>
-								<div class="play-list-singer"><!-- 演唱者 -->
-									凤凰传奇
-								</div>
-								<div class="play-list-time"><!-- 时间 -->
-									04:00
-								</div>
-								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
-									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
-									</div>
-									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
-									</div>
-									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
-									</div>
-								</div>
-								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
-									<div class="play-list-up-down play-list-up">
-									</div>
-									<div class="play-list-up-down play-list-down">
-									</div>
-								</div>
 							</div>
-							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
-								<div class="play-list-play-status"><!-- 播放状态 -->
-									►
-								</div>
-								<div class="play-list-songName"><!-- 歌曲名 -->
-									最炫民族风
-								</div>
-								<div class="play-list-singer"><!-- 演唱者 -->
-									凤凰传奇
-								</div>
-								<div class="play-list-time"><!-- 时间 -->
-									04:00
-								</div>
-								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
-									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
-									</div>
-									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
-									</div>
-									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
-									</div>
-								</div>
-								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
-									<div class="play-list-up-down play-list-up">
-									</div>
-									<div class="play-list-up-down play-list-down">
-									</div>
-								</div>
-							</div>
-							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
-								<div class="play-list-play-status"><!-- 播放状态 -->
-								
-								</div>
-								<div class="play-list-songName"><!-- 歌曲名 -->
-									最炫民族风
-								</div>
-								<div class="play-list-singer"><!-- 演唱者 -->
-									凤凰传奇
-								</div>
-								<div class="play-list-time"><!-- 时间 -->
-									04:00
-								</div>
-								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
-									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
-									</div>
-									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
-									</div>
-									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
-									</div>
-								</div>
-								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
-									<div class="play-list-up-down play-list-up">
-									</div>
-									<div class="play-list-up-down play-list-down">
-									</div>
-								</div>
-							</div>
-							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
-								<div class="play-list-play-status"><!-- 播放状态 -->
-								
-								</div>
-								<div class="play-list-songName"><!-- 歌曲名 -->
-									最炫民族风
-								</div>
-								<div class="play-list-singer"><!-- 演唱者 -->
-									凤凰传奇
-								</div>
-								<div class="play-list-time"><!-- 时间 -->
-									04:00
-								</div>
-								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
-									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
-									</div>
-									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
-									</div>
-									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
-									</div>
-								</div>
-								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
-									<div class="play-list-up-down play-list-up">
-									</div>
-									<div class="play-list-up-down play-list-down">
-									</div>
-								</div>
-							</div>
-							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
-								<div class="play-list-play-status"><!-- 播放状态 -->
-								
-								</div>
-								<div class="play-list-songName"><!-- 歌曲名 -->
-									最炫民族风
-								</div>
-								<div class="play-list-singer"><!-- 演唱者 -->
-									凤凰传奇
-								</div>
-								<div class="play-list-time"><!-- 时间 -->
-									04:00
-								</div>
-								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
-									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
-									</div>
-									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
-									</div>
-									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
-									</div>
-								</div>
-								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
-									<div class="play-list-up-down play-list-up">
-									</div>
-									<div class="play-list-up-down play-list-down">
-									</div>
-								</div>
-							</div>
-							<div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)"><!-- 一条 -->
-								<div class="play-list-play-status"><!-- 播放状态 -->
-								
-								</div>
-								<div class="play-list-songName"><!-- 歌曲名 -->
-									最炫民族风
-								</div>
-								<div class="play-list-singer"><!-- 演唱者 -->
-									凤凰传奇
-								</div>
-								<div class="play-list-time"><!-- 时间 -->
-									04:00
-								</div>
-								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->
-									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect"><!-- 收藏 -->
-									</div>
-									<div class="play-list-selected play-list-selected-download" id="play_list_selected_download"><!-- 下载 -->
-									</div>
-									<div class="play-list-selected play-list-selected-remove" id="play_list_selected_remove"><!-- 删除 -->
-									</div>
-								</div>
-								<div class="play-list-rearrange"><!-- 调整顺序按下之后显示 -->
-									<div class="play-list-up-down play-list-up">
-									</div>
-									<div class="play-list-up-down play-list-down">
-									</div>
-								</div>
+						</div>
+						<div class="scroll-bar-div" style="height: 315px;"><!-- 滚动条 -->
+							<div class="scroll-bar" style="top:0%;" id="scroll_bar">
 							</div>
 						</div>
 					</div>

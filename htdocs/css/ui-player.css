@@ -268,6 +268,7 @@
 	height: 350px;
 	border-style: solid;
 	border-radius: 10px 10px 0 0;
+	display: none;
 }
 .play-list-content img{
 	position: absolute;
@@ -305,11 +306,6 @@
 	background-size:25px 25px;
 	background-repeat: no-repeat;
 }
-.rearrange-button:hover{
-	color: red;
-	background-image: url("/img/playListRearrangeSelect.png");
-	cursor: pointer;
-}
 .play-list-gedang{
 	position: absolute;
 	top:0px;
@@ -341,7 +337,8 @@
 	top: 30px;
 	left: 0px;
 	width: 590px;
-	height: 315px;
+	height: 320px;
+	overflow: hidden;
 }
 .play-list-row{
 	position: relative;
@@ -466,4 +463,29 @@
 .play-list-down:hover{
 	cursor: pointer;
 	background-image: url("/img/playListDownSelect.png");
+}
+
+.scroll-bar-div{
+	position: absolute;
+	top: 30px;
+	right: 0px;
+	width: 10px;
+	background-color: black;
+	border-radius: 10px;
+}
+.scroll-bar{
+	position: absolute;
+	right:0px;
+	width: 8px;
+	background-color: rgb(109, 109, 109);
+	border-radius: 10px;
+}
+.scroll-bar:hover{
+	background-color: rgb(197, 197, 197);
+	cursor: pointer;
+}
+.play-list-data-all{
+	position: absolute;
+	left:0px;
+	width: 100%;
 }

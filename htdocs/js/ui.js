@@ -26,7 +26,8 @@ window.onload=function(){
 	show_ranking_list();
 	document.getElementById("search_box").onkeydown = submit_search;//提交搜索框
 	document.getElementById("play_list").onclick = showorclose_play_list;//显示播放列表
-	document.getElementById("collect_list").onclick = show_collect_list;//显示收藏列表
+	document.getElementById("collect_list").onclick = showorclose_collect_list;//显示收藏列表
+    add_list();
 };
 
 //显示排行榜
@@ -589,7 +590,6 @@ function flush_page()
 				return;
 			}
 			page_list.num = page_list.value.values.length;
-			console.log(page_list.num);
 			//渲染页面
 			flush_music_list();
 			page_cur = 1;
