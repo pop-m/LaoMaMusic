@@ -1,7 +1,7 @@
 // JavaScript Document
 var aud;
 var music_list = new Array();//全局的音乐列表
-var playing_index = -1;//当前播放的音乐在列表中的下标
+var playing_index = -1;//当前播放的音乐在列表中的下标 -1代表列表中没有歌曲，-2代表列表中有歌曲并且下一首要播放列表的第一首
 var player_stat = 1;//当前播放器状态（1:暂停 2:播放）
 //初始化播放器数据
 function init_player()
@@ -31,7 +31,6 @@ function add_to_list(music_name, music_src, music_author, img_src, music_time)
 function play()
 {
 	"use strict";
-	console.log(aud.src === music_list[playing_index].music_src);
 	if(aud.src === music_list[playing_index].music_src){
 		//如果只是暂停与播放情况，继续播放即可
 		aud.play();
@@ -92,7 +91,11 @@ function get_cur_time()
 function get_all_time()
 {
 	"use strict";
-	return(music_list[playing_index].music_time);
+	if(music_list[playing_index].music_time){
+		return(music_list[playing_index].music_time);
+	}else{
+		return 0;
+	}
 }
 //播放指定时间
 function play_to_time(time_s)
@@ -118,7 +121,11 @@ function play_to_music( index )
 	if(player_stat === 2){
 		pause();
 	}
-	playing_index = index;
+	if(playing_index >= music_list.length){
+		playing_index = -1;
+	}else{
+		playing_index = index;
+	}
 	if(player_stat === 2){
 		play();
 	}

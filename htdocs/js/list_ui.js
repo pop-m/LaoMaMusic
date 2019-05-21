@@ -13,39 +13,41 @@ function showorclose_play_list(){
         //此时应该显示播放列表
         document.getElementById("play_list_content").style.display = "block";
         flush_play_list();
+        document.getElementById("play_list").style.backgroundImage = "url(/img/playerlistSelected.png)";
 	    document.getElementById("scroll_bar").onmousedown = change_play_list;//拖动了播放列表的进度条
         show_play_list_status = 1;
     }else{
         //此时应该隐藏播放列表
+        document.getElementById("play_list").style.backgroundImage = "url(/img/playerlist.png)";
         document.getElementById("play_list_content").style.display = "none";
         show_play_list_status = 0;
     }
 }
-
-var play_list = new Array();
-function add_list(){
-    for(var i=0; i<11; i++){
-        var list_ele = {"music_name":"最炫民族风"+i,"music_src":"xxx","music_author":"凤凰传奇","img_src":"xxx","music_time":"240000"};
-        play_list.push(list_ele);
-    }
-}
 //重绘播放列表
-function flush_play_list(){
-    "use strict";
-    for(var i =0; i<play_list.length; i++){
+function flush_play_list(statu=0){//1代表将所有的播放状态清除，0代表显示正确的播放状态
+    document.getElementById("play_list_data_all").innerHTML = "";
+    if(music_list.length === 0){
+        var empty_code = '\
+                                <div class="play-list-empty">\
+									您的播放列表为空，赶紧去添加音乐吧！\
+								</div>\
+        ';
+        document.getElementById("play_list_data_all").innerHTML = empty_code;
+    }
+    for(var i =0; i< music_list.length; i++){
         var html_code = '\
-                            <div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)" onclick="play_list_play(num)"><!-- 一条 -->\
+                            <div class="play-list-row" onmouseover="play_list_over(this)" onmouseout="play_list_out(this)" onclick="play_list_play(' + i + ')"><!-- 一条 -->\
                                 <div class="play-list-play-status"><!-- 播放状态 -->\
-                                    '+ get_play_list_status(i) +'\
+                                    '+ get_play_list_status(i,statu) +'\
 								</div>\
 								<div class="play-list-songName"><!-- 歌曲名 -->\
-									'+ play_list[i].music_name +'\
+									'+ music_list[i].music_name +'\
 								</div>\
 								<div class="play-list-singer"><!-- 演唱者 -->\
-                                '+ play_list[i].music_author +'\
+                                '+ music_list[i].music_author +'\
 								</div>\
 								<div class="play-list-time"><!-- 时间 -->\
-                                '+ ms_to_time(parseInt(parseInt(play_list[i].music_time)/1000)) +'\
+                                '+ ms_to_time(parseInt(parseInt(music_list[i].music_time)/1000)) +'\
 								</div>\
 								<div class="play-list-selected-view"><!-- 选中时显示的按钮 -->\
 									<div class="play-list-selected play-list-selected-collect" id="play_list_selected_collect" onclick="play_list_collect(' + i +')"><!-- 收藏 -->\
@@ -66,7 +68,7 @@ function flush_play_list(){
         document.getElementById("play_list_data_all").innerHTML += html_code;
     }
     //重绘滚动条
-    if(play_list.length >= 11){
+    if(music_list.length >= 11){
         document.getElementsByClassName("scroll-bar-div")[0].style.display = "block";
         get_play_list_scroll_data();
         document.getElementById("play_list_data_all").addEventListener("DOMMouseScroll", play_list_mousescroll,false);
@@ -90,11 +92,6 @@ function play_list_out(data){
     var class_name = data.className;
     data.className=class_name.replace(" play-list-mouseon","");
     data.getElementsByClassName("play-list-selected-view")[0].style.display = "none";
-}
-
-function play_list_click(){
-    "use strict";
-    console.log(this.value + "play");
 }
 
 //显示和关闭收藏列表
@@ -143,7 +140,7 @@ function rearrange_mouseout(data){
 //根据播放列表的长度计算滚动条的高度
 function get_play_list_scroll_data(){
     "use strict";
-    var play_list_view_all_height = (play_list.length) * 30;
+    var play_list_view_all_height = (music_list.length) * 30;
     play_list_scroll_bar_height_bili = parseInt(320 / parseInt(play_list_view_all_height) * 100);
     document.getElementById("scroll_bar").style.height = play_list_scroll_bar_height_bili + "%";
     
@@ -157,7 +154,7 @@ function get_play_list_scroll_data(){
 function change_play_list_view(){
     var scroll_bar_ele = document.getElementById("scroll_bar");
     var scroll_bar_top_bili = parseInt(scroll_bar_ele.style.top.substring(0,scroll_bar_ele.style.top.length-1));
-    var play_list_all_top = (play_list.length) * 30 * scroll_bar_top_bili / 100;
+    var play_list_all_top = (music_list.length) * 30 * scroll_bar_top_bili / 100;
     document.getElementById("play_list_data_all").style.top = "-" + play_list_all_top + "px";
 }
 
@@ -197,12 +194,16 @@ function play_list_mousescroll(eve){
     "use strict";
     eve.cancelBubble=true;
     eve.returnValue = false;
+    var wheel_delta;
     if (eve.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
+        wheel_delta = eve.wheelDelta;
+    } else if (eve.detail) {  //Firefox滑轮事件  
+        wheel_delta = eve.detail;
+    }
         var scroll_bar_start = document.getElementById("scroll_bar").style.top;
         var play_list_scroll_start_top = parseInt(scroll_bar_start.substring(0, scroll_bar_start.length-1));
-        var dif_y_b = ((eve.wheelDelta/10) / play_list_scroll_all_height) * (-1);
+        var dif_y_b = ((wheel_delta/10) / play_list_scroll_all_height) * (-1);
         var result_top = parseInt(dif_y_b*100) + play_list_scroll_start_top;
-        console.log(result_top);
         var limit_bottom = 100 - play_list_scroll_bar_height_bili;
         if(result_top <= 0){
             result_top = 0;
@@ -210,38 +211,162 @@ function play_list_mousescroll(eve){
             result_top = limit_bottom;
         }
         document.getElementById("scroll_bar").style.top = result_top + "%";
-        change_play_list_view();
-    } else if (e.detail) {  //Firefox滑轮事件  
-        console.log(eve.detail);
-    }  
+        change_play_list_view();  
 }
 
 //移除播放列表中下标为num的歌曲
 function play_list_remove(num){
     "use strict";
+    var event = event || window.event;
+    if(event.stopPropagation){
+        event.stopPropagation();
+    }else if(event.cancleBubble){
+        event.cancleBubble = true;
+    }
+
+    if(num === playing_index){
+        //要移除的歌曲是正在播放的歌曲
+        if(num - 1 >= 0){
+            //要删除的歌曲前面还有歌曲
+            playing_index--;
+        }else{
+            //要删除的歌曲前面没有歌曲了
+            if(num < music_list.length-1){
+                //要删除的歌曲后面还有歌曲
+                playing_index-2;
+            }else{
+                //列表已经删除完了
+                playing_index = -1;
+            }
+        }
+        music_list.splice(num, 1);
+        flush_play_list(1);
+        return;
+    }else if(num < playing_index){
+        //要移除的歌曲在正在播放的歌曲之前
+        playing_index--;
+    }
+    music_list.splice(num, 1);
+    flush_play_list();
 }
 //下载播放列表中下标为num的歌曲
 function play_list_download(num){
     "use strict";
+    console.log("下载第"+num+"首歌曲");
+    var event = event || window.event;
+    if(event.stopPropagation){
+        event.stopPropagation();
+    }else if(event.cancleBubble){
+        event.cancleBubble = true;
+    }
+    window.open(music_list[num].music_src,"_blank");
 }
 //收藏播放列表中下标为num的歌曲
 function play_list_collect(num){
     "use strict";
+    var event = event || window.event;
+    if(event.stopPropagation){
+        event.stopPropagation();
+    }else if(event.cancleBubble){
+        event.cancleBubble = true;
+    }
 }
 //向上调整播放列表中下标为num的歌曲
 function play_list_up(num){
     "use strict";
+    var event = event || window.event;
+    if(event.stopPropagation){
+        event.stopPropagation();
+    }else if(event.cancleBubble){
+        event.cancleBubble = true;
+    }
+    
+    if(num === 0){
+        tip_message("已经是第一个了呦!");
+    }else{
+        var tmp = music_list[num];
+        music_list[num] = music_list[num-1];
+        music_list[num-1] = tmp;
+        if(playing_index === num){
+            //调整的是正在播放的歌曲
+            playing_index--;
+        }else if(playing_index === num - 1){
+            playing_index++;
+        }
+        flush_play_list();
+        var list = document.getElementsByClassName("play-list-rearrange");
+        for(var i=0; i<list.length; i++){
+            document.getElementsByClassName("play-list-rearrange")[i].style.display = "block";
+        }
+    }
 }
 //向下调整播放列表中下标为num的歌曲
 function play_list_down(num){
     "use strict";
+    var event = event || window.event;
+    if(event.stopPropagation){
+        event.stopPropagation();
+    }else if(event.cancleBubble){
+        event.cancleBubble = true;
+    }
+    if(num === music_list.length-1){
+        tip_message("已经是最后一个了呦!");
+    }else{
+        var tmp = music_list[num];
+        music_list[num] = music_list[num+1];
+        music_list[num+1] = tmp;
+        if(num === playing_index){
+            //调整的是正在播放的音乐
+            playing_index++;
+        }else if(playing_index === num + 1){
+            playing_index--;
+        }
+        flush_play_list();
+        var list = document.getElementsByClassName("play-list-rearrange");
+        for(var i=0; i<list.length; i++){
+            document.getElementsByClassName("play-list-rearrange")[i].style.display = "block";
+        }
+    }
 }
 //播放播放列表中下标为num的歌曲
 function play_list_play(num){
     "use strict";
+    var event = event || window.event;
+    if(event.stopPropagation){
+        event.stopPropagation();
+    }else if(event.cancleBubble){
+        event.cancleBubble = true;
+    }
+    document.getElementById("used_time").innerText="00:00";
+    //改index之前如果歌曲是播放状态，就先暂停
+    if(player_stat === 2){
+        music_play();
+    }
+    play_to_music(num);
+    //改index之后如果歌曲是暂停状态，就播放
+    if(player_stat === 1 ){
+        music_play();
+    }
+    flush_player_view();
+    flush_play_list();
+}
+//清除空播放列表
+function clear_play_list(){
+    "use strict";
+    music_list.splice(0,music_list.length);
+    playing_index = -1;
+    flush_play_list();
 }
 //播放列表中下标为num的歌曲是否正在播放，是则返回▶，不是则返回空字符串
-function get_play_list_status(num){
+function get_play_list_status(num,status){
     "use strict";
-    return '►';
+    if(status === 1){
+        return "";
+    }
+    if(playing_index >= 0){
+        if(playing_index === num){
+            return '►';
+        }
+    }
+    return "";
 }

@@ -643,3 +643,840 @@ GET /song_search_v2?keyword=%E5%91%A8%E6%9D%B0%E4%BC%A6&page=1&pagesize=150&user
 Host: songsearch.kugou.com
 
 API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=%E6%88%98%E4%BA%89&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E6%88%98%E4%BA%89&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=5B84BEB1EE519DB0739D57B09A49709F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5B84BEB1EE519DB0739D57B09A49709F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=2019204A7ED6609F778FB4892B290CF5
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=2019204A7ED6609F778FB4892B290CF5 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=023CE9873E9CAAC8418F6A452B53F873
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=023CE9873E9CAAC8418F6A452B53F873 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=D2462B148305FF7D990F3B6EB3F90D66
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=D2462B148305FF7D990F3B6EB3F90D66 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=5FCE4CBCB96D6025033BCE2025FC3943 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=B02D98C6594EE928EFB9C098FF926C7E
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=B02D98C6594EE928EFB9C098FF926C7E HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=96E064A41AB84EBE4C03C6AAE3CB9334
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=96E064A41AB84EBE4C03C6AAE3CB9334 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=D2462B148305FF7D990F3B6EB3F90D66
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=D2462B148305FF7D990F3B6EB3F90D66 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=96E064A41AB84EBE4C03C6AAE3CB9334
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=96E064A41AB84EBE4C03C6AAE3CB9334 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=B02D98C6594EE928EFB9C098FF926C7E
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=B02D98C6594EE928EFB9C098FF926C7E HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7BEF944B41C0AD6EDE30797E70603D7A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7BEF944B41C0AD6EDE30797E70603D7A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=58F5CDC383D7E2B52642CEABC24BD6FE
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=58F5CDC383D7E2B52642CEABC24BD6FE HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=0697D37D764489B728531D29DF910591
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=0697D37D764489B728531D29DF910591 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=A11F7A8BD2EA5BBDB32F58A9081F27B4
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=A11F7A8BD2EA5BBDB32F58A9081F27B4 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=8B7DF540F77042FB76DA1EE3A79EAE0A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=8B7DF540F77042FB76DA1EE3A79EAE0A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=8B7DF540F77042FB76DA1EE3A79EAE0A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=8B7DF540F77042FB76DA1EE3A79EAE0A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=0697D37D764489B728531D29DF910591
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=0697D37D764489B728531D29DF910591 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=0697D37D764489B728531D29DF910591
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=0697D37D764489B728531D29DF910591 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/song_search_v2?keyword=%E7%BC%96%E5%8F%B789757&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter
+GET /song_search_v2?keyword=%E7%BC%96%E5%8F%B789757&page=1&pagesize=150&userid=-1&clientver=&platform=WebFilter HTTP/1.0
+
+Host: songsearch.kugou.com
+
+API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7412804EF1B74FAFAAB4F7CE1C71E49C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7412804EF1B74FAFAAB4F7CE1C71E49C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7412804EF1B74FAFAAB4F7CE1C71E49C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7412804EF1B74FAFAAB4F7CE1C71E49C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=96E064A41AB84EBE4C03C6AAE3CB9334
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=96E064A41AB84EBE4C03C6AAE3CB9334 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=96E064A41AB84EBE4C03C6AAE3CB9334
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=96E064A41AB84EBE4C03C6AAE3CB9334 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=96E064A41AB84EBE4C03C6AAE3CB9334
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=96E064A41AB84EBE4C03C6AAE3CB9334 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=BE1E1D3C2A46B4CBD259ACA7FF050CD3 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+m.kugou.com解析错误!
+getMusicInfo:API域名解析失败
+getMusicInfo:server_error
+m.kugou.com解析错误!
+getMusicInfo:API域名解析失败
+getMusicInfo:server_error
+m.kugou.com解析错误!
+getMusicInfo:API域名解析失败
+getMusicInfo:server_error
+m.kugou.com解析错误!
+getMusicInfo:API域名解析失败
+getMusicInfo:server_error
+songsearch.kugou.com解析错误!
+API域名解析失败
+server_error
+/app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=FD906F5B6B468D1C561EBFD7EC313C5C HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=44ABEAA9CCE29AFB5C947D4FBD2C567F HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=0697D37D764489B728531D29DF910591
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=0697D37D764489B728531D29DF910591 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=458E9B9F362277AC37E9EEF1CB80B535 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=76D04F195C1F081CC0CD027A310A7D9A HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=7E91FDE7E8D33E8ED11C6DB4620917E2 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成
+/app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78
+GET /app/i/getSongInfo.php?cmd=playInfo&hash=9198B18815EE8CE42AE368AE29276F78 HTTP/1.0
+
+Host: m.kugou.com
+
+getMusicInfo:API请求完成

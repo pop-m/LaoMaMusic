@@ -88,6 +88,14 @@ div.ui-rank-list:hover{
 	width: 100px;
 	height:70px;
 }
+.ui-before-login{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
 .ui-login-text{
 	position: absolute;
 	top:24px;
@@ -115,7 +123,52 @@ div.ui-rank-list:hover{
 div.ui-login-text:hover,div.ui-signup-text:hover{
 	cursor: pointer;
 	color: #E6E6E6;
+
 }
+.ui-login-in-div{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+	display: none;
+}
+.ui-user-text{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	overflow: hidden;
+	color: #888888;
+}
+.ui-user-text:hover{
+	cursor: pointer;
+	color: #E6E6E6;
+	background-color: black;
+}
+.ui-user-exit{
+	position: absolute;
+	left:0px;
+	top:70px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #888888;
+	background-color: #302F2F;
+	display: none;
+}
+.ui-user-exit:hover{
+	cursor: pointer;
+	color: #E6E6E6;
+	background-color: black;
+}
+
+
 .ui-about-me{
 	position: absolute;
 	top: 0px;
@@ -457,7 +510,7 @@ img.ui-song-play-img:hover{
 	color: #8C918F;
 }
 
-.alert {
+.password-tip {
 	display: none;
 	position:absolute;
 	bottom: 10px;
@@ -465,10 +518,24 @@ img.ui-song-play-img:hover{
 	width: auto;
 	height: auto;
 	line-height: 12px;
-	/*display: none;*/
 	font-size: 12px;
 	color: #f00;
 	float: left;
 	margin-bottom: 15px;
 }
-
+.tip{
+	position: fixed;
+	bottom:150px;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	display: none;
+}
+.tip p{
+	display: inline-block;
+	background-color: #E6E6E6;
+	line-height: 40px;
+	padding: 10px;
+	color: #000;
+	border-radius: 10px;
+}

@@ -116,9 +116,6 @@ int search_music(const char* query_string)
 int main(){
 	const char *method = getenv("REQUEST_METHOD");
 	if(strcasecmp(method, "GET") == 0){
-		//获取cookies
-		//const char *cookies = "coooookie";//getenv("HTTP_COOKIE");
-		//进行用户身份验证 cookie_check_user()
 		if(1){
 			//身份验证成功，进行搜索
 			//获取搜索的关键字

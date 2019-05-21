@@ -13,7 +13,7 @@ var page_cur = 1;//当前的页码
 var ajax_status = 0; //0代表当前没有进行ajax操作，1代表当前正在进行ajax请求
 window.onload=function(){
 	"use strict";
-	document.getElementById("show_login").onclick = shog_login;//点击登录按钮显示登录窗口
+	document.getElementById("show_login").onclick = shog_login;//显示登录窗口
 	document.getElementsByClassName("closs-btn")[0].onclick = close_login;	//点击关闭按钮关闭登录窗口
 	document.getElementById("player_show").onclick = show_player;  //点击显示播放器
 	init_player();//初始化音乐播放器
@@ -27,7 +27,7 @@ window.onload=function(){
 	document.getElementById("search_box").onkeydown = submit_search;//提交搜索框
 	document.getElementById("play_list").onclick = showorclose_play_list;//显示播放列表
 	document.getElementById("collect_list").onclick = showorclose_collect_list;//显示收藏列表
-    add_list();
+	document.getElementById("login_btn").onclick = check_login;//登录
 };
 
 //显示排行榜
@@ -51,6 +51,57 @@ function shog_login()
 	var cover = document.getElementsByClassName("login-back")[0];
 	login_window.style.display = "block";
 	cover.style.display = "block";
+	document.getElementById("UserName").onkeydown = submit_login;
+	document.getElementById("Password").onkeydown = submit_login;
+}
+function submit_login(eve){
+	"use strict";
+	if(eve.keyCode === 13){
+		check_login();
+	}else{
+		document.getElementById("password_tip").style.display = "none";
+	}
+}
+
+//登录
+function check_login(){
+	"use strict";
+	//前端的校验
+	//1.是否为空
+	//2.是否超长
+	var User = document.getElementById("UserName").value;
+	var Password = document.getElementById("Password").value;
+	var pass_tip = document.getElementById("password_tip");
+	if(typeof User === "undefined" || User == null || User === ''){
+		pass_tip.innerText = "用户名不能为空";
+		pass_tip.style.display = "block";
+		return;
+	}else if(typeof Password === "undefined" || Password == null || Password === ''){
+		pass_tip.innerText = "密码不能为空";
+		pass_tip.style.display = "block";
+		return;
+	}else if(User.length > 8){
+		pass_tip.innerText = "用户名不能超过8个字符";
+		pass_tip.style.display = "block";
+		return;
+	}else if(Password.length < 8 || Password > 15){
+		pass_tip.innerText = "密码应在8到15位之间";
+		pass_tip.style.display = "block";
+		return;
+	}
+	//进行登录
+	login(User,Password);
+}
+//用户登录
+function login(username, password){
+	"use strict";
+	//执行ajax请求
+	//url：  "/cgi/userLogin.cgi"
+	//method： "GET"
+	//参数：username，password
+	//返回值：json
+	//	status:0(登录成功)1()登录失败
+	//		成功的时候：sessionId(返回的sessionId设置位cookie)s
 }
 //关闭登录窗口
 function close_login()
@@ -81,7 +132,7 @@ function show_player()
 				player.style.bottom = botm + "px";
 			}
 		},10);
-		ele.src = "img/up.png";
+		ele.src = "/img/up.png";
 	}
 	else{
 		//应该向上移动
@@ -95,7 +146,7 @@ function show_player()
 				player.style.bottom = botm + "px";
 			}
 		},10);
-		ele.src = "img/down.png";
+		ele.src = "/img/down.png";
 	}
 }
 
@@ -104,10 +155,9 @@ function submit_search(eve)
 {
 	if(eve.keyCode === 13){
 		//执行ajax请求
-		//url：  "/cgi/searchSongName"
+		//url：  "/cgi/searchSongName.cgi"
 		//method： "GET"
 		//param: "Name:XXXX"
-		//headers: "cookie:xxxx"
 		if(ajax_status === 1){
 			//如果当前还有未完成的ajax请求，那就将其先进行关闭
 			http_request.abort();
@@ -182,17 +232,26 @@ function show_cur_time()
 {
 	var time_ele = document.getElementById("used_time");
 	var going_line = document.getElementById("going_line");
+	var time_total = get_all_time();
 	get_time = setInterval(function(){
 		if(only_control === 1){//如果为1说明当前是播放的事件在控制进度条
 			var cur_time = get_cur_time();
-			var time_total = get_all_time();
 			var width = ((cur_time*1000/time_total)*100).toFixed(2);
 			going_line.style.width = width+"%";
 			time_ele.innerText = ms_to_time(cur_time);
 			if(is_over()){//播放已经结束                      默认下一曲播放
-				document.getElementById("player_play").src="img/play.png";
+				document.getElementById("player_play").src="/img/play.png";
 				player_stat = 1;
 				music_next();
+				if(playing_index === -1){
+					document.getElementById("music_img").src="/img/default-music-img.png";
+					document.getElementById("music_name").innerText = "老马音乐";
+					document.getElementById("music_author").innerText = "老马音乐";
+					document.getElementById("going_line").style.width="0%";
+					document.getElementById("music_img").style.transform="rotate(0deg)";
+					document.getElementById("all_time").innerText = "00:00";
+					return;
+				}
 				music_play();
 			}
 		}
@@ -282,7 +341,8 @@ function move(eve)
 		offset = 0;
 	}
 	document.getElementById("going_line").style.width = offset + "%";
-	document.getElementById("used_time").innerText = ms_to_time(get_all_time() * offset / 100000);
+	var all_time = time_to_s(document.getElementById("all_time").innerText);
+	document.getElementById("used_time").innerText = ms_to_time(all_time * offset / 100);
 }
 function stop()
 {
@@ -300,18 +360,22 @@ function music_play()
 	if(player_stat === 1){
 		//暂停状态，需要播放
 		if(playing_index == -1){
-			alert("播放列表还没有歌曲呦！");
+			tip_message("播放列表还没有歌曲呦！");
 			return;
 		}
-		document.getElementById("player_play").src="img/pause.png";
+		document.getElementById("player_play").src="/img/pause.png";
 		play();
 		player_stat = 2;
 		show_cur_time();
 		rotate();
+		if(show_play_list_status === 1){
+			//刷新以下播放列表
+			flush_play_list();
+		}
 	}
 	else{
 		//播放状态，需要暂停
-		document.getElementById("player_play").src="img/play.png";
+		document.getElementById("player_play").src="/img/play.png";
 		pause();
 		player_stat = 1;
 		clearInterval(deg_stat);
@@ -324,11 +388,27 @@ function music_pre()
 	document.getElementById("used_time").innerText="00:00";
 	clearInterval(deg_stat);
 	clearInterval(get_time);
+	if(playing_index === -1){
+		document.getElementById("player_play").src="/img/play.png";
+		pause();
+		player_stat = 1;
+		document.getElementById("music_img").src="/img/default-music-img.png";
+		document.getElementById("music_name").innerText = "老马音乐";
+		document.getElementById("music_author").innerText = "老马音乐";
+		document.getElementById("going_line").style.width="0%";
+		document.getElementById("music_img").style.transform="rotate(0deg)";
+		document.getElementById("all_time").innerText = "00:00";
+		return;
+	}
 	pre_music();
 	flush_player_view();
 	if(player_stat === 2){
 		show_cur_time();
 		rotate();
+	}
+	if(show_play_list_status === 1){
+		//刷新以下播放列表
+		flush_play_list();
 	}
 }
 function music_next()
@@ -337,11 +417,33 @@ function music_next()
 	document.getElementById("used_time").innerText="00:00";
 	clearInterval(deg_stat);//只要是点击了下一曲，都应该将所有的定时器先关闭，然后再将界面刷新
 	clearInterval(get_time);
-	next_music();
-	flush_player_view();
-	if(player_stat === 2){
-		show_cur_time();
-		rotate(); 
+	if(playing_index == -2){
+		//此时应该播放列表的第一首
+		play_list_play(0);
+	}else if(playing_index === -1){
+		//此时播放列表中没有歌曲直接停止即可
+		document.getElementById("player_play").src="/img/play.png";
+		pause();
+		player_stat = 1;
+		document.getElementById("music_img").src="/img/default-music-img.png";
+		document.getElementById("music_name").innerText = "老马音乐";
+		document.getElementById("music_author").innerText = "老马音乐";
+		document.getElementById("going_line").style.width="0%";
+		document.getElementById("music_img").style.transform="rotate(0deg)";
+		document.getElementById("all_time").innerText = "00:00";
+		return;
+	}
+	if(playing_index < music_list.length){
+		next_music();
+		flush_player_view();
+		if(player_stat === 2){
+			show_cur_time();
+			rotate();
+		}
+		if(show_play_list_status === 1){
+			//刷新以下播放列表
+			flush_play_list();
+		}		
 	}
 }
 
@@ -368,14 +470,14 @@ function change_music(num)
 			ajax_status = 0;
 			//如果获取的音乐是付费的，那就之进行alert即可
 			if(music_info.value.error != ""){
-				alert(music_info.value.error);
+				tip_message(music_info.value.error);
 				return;
 			}
 			//添加至播放器的播放列表
 			add_to_list(music_info.value.song_name,music_info.value.play_url,music_info.value.author_name,music_info.value.img,parseInt(music_info.value.timelength)*1000);
 			//重绘完成
 			music_info.status = 0;
-
+			tip_message("歌曲已经自动添加到播放列表");
 			//播放最后一首歌曲
 			document.getElementById("used_time").innerText="00:00";
 			//改index之前如果歌曲是播放状态，就先暂停
@@ -395,7 +497,7 @@ function change_music(num)
 				clearInterval(ajax_timeout);
 				http_request.abort();
 				ajax_status = 0;
-				alert("你的网络貌似不太好！");
+				tip_message("你的网络貌似不太好！");
 			}
 		}
 	},500);
@@ -430,7 +532,7 @@ function download_music(num)
 				clearInterval(ajax_timeout);
 				http_request.abort();
 				ajax_status = 0;
-				alert("你的网络貌似不太好！");
+				tip_message("你的网络貌似不太好！");
 			}
 		}
 	},500);
@@ -464,10 +566,10 @@ function flush_music_list()
 				<p class="ui-text ui-album-text overflow-style">'+page_list.value.values[i].AlbumName+'</p>\
 			</div>\
 			<div class="ui-col ui-col-play">\
-				<img src="img/play_ico.png" class="ui-song-play-img" alt="" onclick="change_music('+i+')"/>\
+				<img src="/img/play_ico.png" class="ui-song-play-img" alt="" onclick="change_music('+i+')"/>\
 			</div>\
 			<div class="ui-col ui-col-download">\
-				<img src="img/down_ico.png" class="ui-song-play-img" alt="" onclick="download_music('+i+')"/>\
+				<img src="/img/down_ico.png" class="ui-song-play-img" alt="" onclick="download_music('+i+')"/>\
 			</div>\
 			<div class="ui-col ui-col-time">\
 				<p class="ui-text ui-time-text">'+ms_to_time(page_list.value.values[i].Duration)+'</p>\
@@ -585,7 +687,7 @@ function flush_page()
 			//ajax获取到了数据
 			if(page_list.value.status === 0){
 				//搜索结果出问题
-				alert(page_list.value.error);
+				tip_message(page_list.value.error);
 				page_list.status = 0;
 				return;
 			}
@@ -604,9 +706,51 @@ function flush_page()
 				http_request.abort();
 				page_list.status = 0;
 				ajax_status = 0;
-				alert("你的网络貌似不太好！");
+				tip_message("你的网络貌似不太好！");
 			}
 		}
 	},500);
 }
 
+function move_down(){
+	"use strict";
+	document.getElementById("ui_user_exit").style.display = "block";
+}
+function move_down_out(){
+	"use strict";
+	document.getElementById("ui_user_exit").style.display = "none";
+}
+function tip_message(message){
+	"use strict";
+	var dom = document.getElementsByClassName("tip")[0];
+	dom.getElementsByTagName("p")[0].innerText = message;
+	dom.style.transform = "translateY(-20px)";
+	dom.style.opacity = 0;
+	var transform_y = 40;
+	var opacity = 0;
+	var times = 15;//执行次数
+	var time = 200;//执行总时间
+	var transform_y_step = transform_y/times;
+	var opacity_step = 1/times;
+	console.log("transform_y_step:" + transform_y_step);
+	console.log("opacity_step" + opacity_step);
+	var i = 1;
+	dom.style.display = "block";
+	var interval = setInterval(function(){
+		dom.style.transform = "translateY(" + transform_y + "px)";
+		dom.style.opacity = opacity;
+		transform_y = transform_y - transform_y_step;
+		opacity = opacity + opacity_step;
+		if(i === times){
+			clearInterval(interval);
+			setTimeout(function(){
+				dom.style.display = "none";
+			},500);
+		}
+		i++;
+	},parseInt(time/times))
+}
+function user_exit(){
+	"use strict";
+	
+}

@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <title>老马音乐</title>
 <meta name="keywords" content="老马音乐，音乐，播放器，下载，播放，免费，歌单，收藏，分享音乐，高音质，320K，音乐社交，官网">
-<link rel="stylesheet" href="css/ui-index-page.css">
-<link rel="stylesheet" href="css/ui-player.css">
-<script type="text/javascript" src="js/ui.js"></script>
-<script type="text/javascript" src="js/player.js"></script>
-<script type="text/javascript" src="js/ajax_ui.js"></script>
-<script type="text/javascript" src="js/list_ui.js"></script>
-<link rel="shortcut icon" href="img/logo.ico">
+<link rel="stylesheet" href="/css/ui-index-page.css">
+<link rel="stylesheet" href="/css/ui-player.css">
+<script type="text/javascript" src="/js/ui.js"></script>
+<script type="text/javascript" src="/js/player.js"></script>
+<script type="text/javascript" src="/js/ajax_ui.js"></script>
+<script type="text/javascript" src="/js/list_ui.js"></script>
+<link rel="shortcut icon" href="/img/logo.ico">
 </head>
 <body>
 	<div class="ui-header-bg"><!-- 顶栏 -->
@@ -19,7 +19,7 @@
 		<div class="ui-header">
 			<div class="ui-logo"><!-- logo的位置 -->
 				<a href="#">
-					<img border="0" src="img/logo.png" alt="logo"/>
+					<img border="0" src="/img/logo.png" alt="logo"/>
 				</a>
 			</div>
 			<div id="ranking_list" class="ui-rank-list"><!-- 排行榜的位置 -->
@@ -30,12 +30,23 @@
 				<img src="img/search.png" class="ui-search-ico" alt=""/>
 			</div>
 			<div class="ui-user"><!-- 用户登录与注册 -->
-				<div class="ui-login-text" id="show_login"><!-- 登录 -->
-					登录
+				<div class="ui-before-login">
+					<div class="ui-login-text" id="show_login">
+						登录
+					</div>
+					<p class="ui-zhx">|</p>
+					<div class="ui-signup-text" id="show_signup">
+						注册
+					</div>
 				</div>
-				<p class="ui-zhx">|</p>
-				<div class="ui-signup-text" id="show_signup"><!-- 注册 -->
-					注册
+				
+				<div class="ui-login-in-div" onmouseover="move_down()" onmouseout="move_down_out()">
+					<div class="ui-user-text"><!-- 登录之后显示的用户信息 -->
+						faith小征&nbsp;▾
+					</div>
+					<div class="ui-user-exit" id="ui_user_exit" onclick="user_exit()">
+						退出登录
+					</div>
 				</div>
 			</div>
 			<div class="ui-about-me"><!-- 关于我们的位置 -->
@@ -66,6 +77,7 @@
 		</div>
 		<div class="page-num-area" id="page_num_area">
 		</div>
+	</div>
 	
 <!--		<div class="ui-row">
 			<div class="ui-col ui-col-number">
@@ -108,42 +120,42 @@
 -->
 	<div class="footer" id="player_back"><!-- 屏幕底端(用来放播放器) -->
 		<div class="lock">
-			<img src="img/down.png" class="lock-img" id="player_show" alt="" />
+			<img src="/img/down.png" class="lock-img" id="player_show" alt="" />
 		</div>
 		<div class="player"><!-- 播放器面板 -->
 			<div class="mp3-player-img"><!-- 音乐图片盒子 -->
-				<img src="img/default-music-img.png" class="player-img-style" alt="" id="music_img" style="transform:rotate(0deg);" />
+				<img src="/img/default-music-img.png" class="player-img-style" alt="" id="music_img" style="transform:rotate(0deg);" />
 			</div>
 			<div class="mp3-player-control"><!-- 播放器控制区 -->
 				<div class="player-title"><!-- 歌曲名字和演唱者 -->
-					<p class="player-name-text overflow-style" id="music_name">Dumb Blonde</p>
-					<p class="player-singer-text overflow-style" id="music_author">Avril Lavigne</p>
+					<p class="player-name-text overflow-style" id="music_name">老马音乐</p>
+					<p class="player-singer-text overflow-style" id="music_author">老马音乐</p>
 				</div>
 				<div class="player-control-play"><!-- 暂停播放上一曲下一曲区域 -->
 					<div class="pre-circle">
-						<img src="img/pre.png" alt="" class="pre-ico ico-action" id="player_pre"><!-- 上一曲 -->
+						<img src="/img/pre.png" alt="" class="pre-ico ico-action" id="player_pre"><!-- 上一曲 -->
 					</div>
 					<div class="play-circle">
-						<img src="img/play.png" alt="" class="play-ico ico-action" id="player_play"><!-- 播放 -->
+						<img src="/img/play.png" alt="" class="play-ico ico-action" id="player_play"><!-- 播放 -->
 					</div>
 					<div class="next-circle">
-						<img src="img/next.png" alt="" class="next-ico ico-action" id="player_next"><!-- 下一曲 -->
+						<img src="/img/next.png" alt="" class="next-ico ico-action" id="player_next"><!-- 下一曲 -->
 					</div>
 				</div>
 				<div class ="lists"><!-- 音乐列表和收藏列表区域 -->
 					<div class="play-list" id="play_list"><!-- 播放列表 --></div>
 					<div class="play-list-content" id="play_list_content"><!-- 播放列表主体 -->
-						<img src="img/listBackImg.jpg" alt="">
+						<img src="/img/listBackImg.jpg" alt="">
 						<div class="play-list-content-top"><!-- 顶栏 -->
 							<span class="play-list-title"><!-- 播放列表标题 -->
 								<strong>播放列表</strong>
 							</span>
 							<span class="rearrange-button" onclick="rearrange_button(this)" onmousemove="rearrange_mouseon(this)" onmouseout="rearrange_mouseout(this)"><!-- 调整顺序按钮 -->
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调整顺序
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调整顺序
 							</span>
 							<span class="play-list-gedang">|</span>
-							<span class="clear-play-list"><!-- 清除播放列表 -->
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清除全部
+							<span class="clear-play-list" onclick="clear_play_list()"><!-- 清除播放列表 -->
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清除全部
 							</span>
 						</div>
 						<div class="play-list-data" id="play_list_data"><!-- 播放列表数据显示部分 -->
@@ -175,7 +187,7 @@
 					</div>
 				</div>
 				<div class="player-volue"><!-- 音量控制区域 -->
-					<img src="img/sound.png" class="volue-img" alt=""/><!-- 音量图标 -->
+					<img src="/img/sound.png" class="volue-img" alt=""/><!-- 音量图标 -->
 					<div class="volue-controller" id="volume_all" style="width: 80px;"><!-- 音量控制条 -->
 						<div class="volue-run" style="width: 50%" id="volume_going_line">
 							<div class="volue-controller-cur" id="volume_cur"></div>
@@ -196,13 +208,16 @@
 		</div>
 		<div class="form-group">
 			<input type="text" class="form-style form-user" placeholder="Username " id="UserName">
-			<img src="img/user.png" class="img-user" alt=""/><!-- user标签 -->
-			<input type="password" class="form-style form-psd" placeholder="Password" id="Passwod">
-			<img src="img/passwd.png" class="img-passwd" alt="" /><!-- psd标签 -->
-			<span class="alert">密码不能为空</span>
+			<img src="/img/user.png" class="img-user" alt=""/><!-- user标签 -->
+			<input type="password" class="form-style form-psd" placeholder="Password" id="Password">
+			<img src="/img/passwd.png" class="img-passwd" alt="" /><!-- psd标签 -->
+			<span class="password-tip" id="password_tip">密码不能为空</span>
 			<a class="forget-link" href="#">忘记密码?</a>
 		</div>
-		<button type="button" class="login-btn" >登录</button>
+		<button type="button" class="login-btn" id="login_btn">登录</button>
+	</div>
+	<div class="tip"><!-- 提示信息 -->
+		<p></p>
 	</div>
 </body>
 </html>

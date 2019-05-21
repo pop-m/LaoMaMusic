@@ -367,11 +367,14 @@
 	position: absolute;
 	top: 0px;
 	left: 30px;
-	width: 390px;
+	width: 298px;
 	height: 100%;
 	line-height: 28px;
 	font-size: 15px;
 	color: white;
+	overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
 }
 .play-list-singer{
 	position: absolute;
@@ -382,6 +385,9 @@
 	line-height: 28px;
 	font-size: 15px;
 	color: white;
+	overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
 }
 .play-list-time{
 	position: absolute;
@@ -488,4 +494,15 @@
 	position: absolute;
 	left:0px;
 	width: 100%;
+}
+.play-list-empty{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 320px;
+	line-height: 320px;
+	font-size: 15px;
+	text-align: center;
+	color: white;
 }
